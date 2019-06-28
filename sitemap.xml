@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/bf5.html</loc>
+    
+    <lastmod>2019-06-28T13:49:50.777Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/top/index.html</loc>
     
     <lastmod>2019-06-28T08:31:04.265Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>http://yoursite.com/clover.html</loc>
     
     <lastmod>2019-06-05T10:07:33.100Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/bf5.html</loc>
-    
-    <lastmod>2019-06-05T10:06:33.584Z</lastmod>
     
   </url>
   
