@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="写在前面反恐精英Online2，英文名：Counter-Strike Online2，粉丝们称为蛋拐兔2。世纪天成公司于2013年9月5日正式宣布代理《反恐精英Online2》，国服于2015年2月5日起源首测，3月5号二测，4月22号正式公测。然而不辛的是，在2018年5月18日，国服（世纪天成代理）正式停止运营。">
+<meta name="keywords" content="CSO2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Playing CSO2 on your computer！">
+<meta property="og:url" content="http://yoursite.com/cso2.html">
+<meta property="og:site_name" content="Bess&#39;s Blog">
+<meta property="og:description" content="写在前面反恐精英Online2，英文名：Counter-Strike Online2，粉丝们称为蛋拐兔2。世纪天成公司于2013年9月5日正式宣布代理《反恐精英Online2》，国服于2015年2月5日起源首测，3月5号二测，4月22号正式公测。然而不辛的是，在2018年5月18日，国服（世纪天成代理）正式停止运营。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/cso2/cs001.png">
+<meta property="og:image" content="http://yoursite.com/cso2/cs002.png">
+<meta property="og:image" content="http://yoursite.com/cso2/cs003.png">
+<meta property="og:image" content="http://yoursite.com/cso2/cs004.png">
+<meta property="og:image" content="http://yoursite.com/cso2/cs005.png">
+<meta property="og:image" content="http://yoursite.com/cso2/cs006.png">
+<meta property="og:image" content="http://yoursite.com/cso2/cs007.png">
+<meta property="og:image" content="http://yoursite.com/cso2/cs008.png">
+<meta property="og:updated_time" content="2019-06-05T10:08:57.155Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Playing CSO2 on your computer！">
+<meta name="twitter:description" content="写在前面反恐精英Online2，英文名：Counter-Strike Online2，粉丝们称为蛋拐兔2。世纪天成公司于2013年9月5日正式宣布代理《反恐精英Online2》，国服于2015年2月5日起源首测，3月5号二测，4月22号正式公测。然而不辛的是，在2018年5月18日，国服（世纪天成代理）正式停止运营。">
+<meta name="twitter:image" content="http://yoursite.com/cso2/cs001.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Bess's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/cso2">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Playing CSO2 on your computer！ | Bess's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Bess's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">www.zhuimeng.online</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-top">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/top/" rel="section"><i class="menu-item-icon fa fa-fw fa-signal"></i> <br>热榜榜</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-books">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/books/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>读书</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-movies">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/movies/" rel="section"><i class="menu-item-icon fa fa-fw fa-video-camera"></i> <br>电影</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-games">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/games/" rel="section"><i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>游戏</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/bessyjl" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/cso2.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bess Croft">
+      <meta itemprop="description" content="肥宅程序员">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bess's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Playing CSO2 on your computer！
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-03 21:55:50" itemprop="dateCreated datePublished" datetime="2019-04-03T21:55:50+08:00">2019-04-03</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/cso2.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/cso2.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.7k</span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>反恐精英Online2，英文名：Counter-Strike Online2，粉丝们称为蛋拐兔2。世纪天成公司于2013年9月5日正式宣布代理《反恐精英Online2》，国服于2015年2月5日起源首测，3月5号二测，4月22号正式公测。然而不辛的是，在2018年5月18日，国服（世纪天成代理）正式停止运营。</p>
+<a id="more"></a>
+
+
+        <div id="aplayer-bxjDYJEg" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+			  <script>
+				  var options = {"narrow":false,"autoplay":true,"showlrc":3,"mode":"random","music":[{"title":"Welcome Back","author":"Nexon","url":"http://psme57jkk.bkt.clouddn.com/Nexon%20-%20Welcome%20Back.mp3","pic":"http://psme57jkk.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"We Wish You A Merry X-Mas","author":"Nexon","url":"http://psme57jkk.bkt.clouddn.com/Nexon%20-%20We%20Wish%20You%20A%20Merry%20X-Mas.mp3","pic":"http://psme57jkk.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"Lobby","author":"Nexon","url":"http://psme57jkk.bkt.clouddn.com/Nexon%20-%20Lobby.mp3","pic":"http://psme57jkk.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"躲猫猫特殊回合","author":"Nexon","url":"http://psme57jkk.bkt.clouddn.com/Nexon%20-%20%E8%BA%B2%E7%8C%AB%E7%8C%AB%E7%89%B9%E6%AE%8A%E5%9B%9E%E5%90%88.mp3","pic":"http://psme57jkk.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"CSO2","author":"Nexon","url":"http://psme57jkk.bkt.clouddn.com/Nexon%20-%20CSO2.mp3","pic":"http://psme57jkk.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"}]};
+				  options.element = document.getElementById("aplayer-bxjDYJEg");
+				  var ap = new APlayer(options);
+			    window.aplayers || (window.aplayers = []);
+				  window.aplayers.push(ap);
+			  </script>
+
+<h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>嗯，反正我是在停服之前的一段时间，就已经没玩了。因为我害怕，害怕前一天还玩了，第二天就进不去游戏了，这并不是我想要的。在我的印象中，每年的圣诞节，是蛋拐兔最好玩的时候，人多，氛围也好。而18年的圣诞节，只能听听bgm艰难度日，到后来，当我得知有私服之后，我便又重新燃起了激情！！！</p>
+<h2 id="Gaming"><a href="#Gaming" class="headerlink" title="Gaming"></a>Gaming</h2><h3 id="浅谈"><a href="#浅谈" class="headerlink" title="浅谈"></a>浅谈</h3><p>蛋拐兔2关服了，你是否还在苦恼呢？其实不少小伙伴们都知道有私服的，虽然不是我的，但是我也想借此机<br>会来推广，好让喜欢的朋友玩。我知道的私服都是免费的，都是公益性质的，搭建私服的大佬们完全是为了能<br>让大家接着玩，而且还免费。我录制视频和写教程，不出于任何形式的盈利目的，完全是基于一个热爱的老<br>玩家心态，告知和帮助那些跟我一样，曾经喜欢玩蛋拐兔的玩家，能够重新玩这款游戏。</p>
+<center>不管你玩不玩，但是请记得，你的青春里有过它！！！</center>
+
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>首先，让我们感谢Ochii大神写的CSO2的主服务器和客户端启动程序，并且已经开源了！<br>还有“I’m Not MentaL”大神的GUI启动器。<br>同时也感谢国内的几个小团队，自己搭建了国内的私服，并在此基础上优化了服务端和启动端，让大家<br>不仅免费也更容易地van这款游戏，而且是联机的！谢谢你们做出的努力！感谢！</p>
+<h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>Microsoft .NET Framework 4.5.2及以上</span><br><span class="line"><span class="bullet">- </span>NodeJS（如果你玩国内的联机私服，则不需要安装）</span><br><span class="line"><span class="bullet">- </span>一些必要的游戏运行环境，如果你是平常玩游戏，那么我相信你的电脑上也已经有了</span><br></pre></td></tr></table></figure>
+
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- 安装包，版本可选，看你想玩那种的。国内私服的话，也是有它们自己稍做了修改的版本的。</span><br><span class="line">	链接：https:<span class="regexp">//pan</span>.baidu.com/<span class="keyword">s</span>/<span class="number">15</span>qVLo7jrJxG6r-kZBqqEdQ   提取码：<span class="number">1</span>h7v </span><br><span class="line">- 主服务器 </span><br><span class="line">	链接：https:<span class="regexp">//pan</span>.baidu.com/<span class="keyword">s</span>/<span class="number">166</span>igd4lFMR1R776ATMKN5w   提取码：h0ka </span><br><span class="line">- 客户端启动程序</span><br><span class="line">	链接：https:<span class="regexp">//pan</span>.baidu.com/<span class="keyword">s</span>/<span class="number">1</span>OeDIVXhbfgvDljVLdYxVfA   提取码：iwso </span><br><span class="line">- GUI启动器</span><br><span class="line">	链接：https:<span class="regexp">//pan</span>.baidu.com/<span class="keyword">s</span>/<span class="number">1</span>A8rh44NzJ8MSXU8edJqIwQ   提取码：czup </span><br><span class="line">- node.js（版本<span class="number">10</span>或更高版本）</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h3><p>我们先假设，你已经安装了<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>，然后，在你的电脑硬盘里面，随便找一个盘。我放在E盘了，比如我的游戏路径</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E:\Counter-<span class="keyword">Strike </span>Online <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<p>然后创建<code>Game</code>文件夹和<code>Server</code>文件夹，如图：</p>
+<p><img src="/cso2/cs001.png" alt></p>
+<p>然后，将游戏的压缩包解压到<code>Game</code>文件夹，解压完之后，应该是这样：</p>
+<p><img src="/cso2/cs002.png" alt></p>
+<p>接着将主服务器的压缩包，解压至<code>Server</code>文件夹，解压完之后，应为：</p>
+<p><img src="/cso2/cs003.png" alt></p>
+<p>然后，将下载的2个客户端启动程序，解压至<code>Counter-Strike Online 2\Game\Bin</code>文件夹。解压完成后，再将GUI启动器压缩包，解压至<code>Counter-Strike Online 2</code>根目录下。然后，基本上就完成一大半了。正常的，这个时候你的游戏根目录下应该为这样：</p>
+<p><img src="/cso2/cs004.png" alt></p>
+<h2 id="构建游戏"><a href="#构建游戏" class="headerlink" title="构建游戏"></a>构建游戏</h2><p>下一步我们要做的，就是让游戏跑起来！</p>
+<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>这一步是最开始的方法，但是也最复杂，不建议大家使用，请跳至下一步！</p>
+<p>要运行服务器，您需要：</p>
+<ul>
+<li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>（版本10或更高版本）;</li>
+<li>搭建服务器，也就是我们下载的主服务器。</li>
+</ul>
+<p>然后，在服务器目录内的终端实例中，执行以下操作：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> <span class="comment">--only = production ＃安装所需的依赖项（最小依赖项） </span></span><br><span class="line">npm run <span class="keyword">start</span> ＃启动预构建服务器</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，服务器<strong>会询问您要侦听的网络接口</strong>。</p>
+<h4 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h4><p>下载源代码后，转到源代码目录中的终端实例，然后：</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install ＃安装所需的依赖项 </span><br><span class="line">npm <span class="keyword">run</span><span class="bash"> build ＃ builds服务器 </span></span><br><span class="line">npm <span class="keyword">run</span><span class="bash"> start ＃启动新服务器构建</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h4><p>选项：</p>
+<ul>
+<li><code>-i, --ip-address [ip]</code>（<em>可选</em>）要侦听的IP地址（默认值：自动检测）</li>
+<li><code>-p, --port-master [port]</code>（<em>可选</em>）服务器的（TCP）端口（默认值：30001）</li>
+<li><code>-P, --port-holepunch [port]</code>（<em>可选</em>）服务器的打孔（UDP）端口（默认值：30002）</li>
+<li><code>-l, --log-packets</code>（<em>可选</em>）记录传入和传出的数据包</li>
+</ul>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>在开始之前，你必须允许launcher.exe在防火墙和端口转发端口27015到27020或打开路由器的NAT，以便与其他人一起玩。</p>
+<p>如果您举办房间比赛，其他客户将知道您的IP。</p>
+<p>如果您加入主持人的房间比赛，主人将知道您的IP。</p>
+<p>一旦开发了专用服务器启动器，这可能在将来可以避免。</p>
+<h4 id="开始游戏"><a href="#开始游戏" class="headerlink" title="开始游戏"></a>开始游戏</h4><p>基本上就是挂载到一个大服务器，然后玩家们进来。由配置和网络比较好的玩家开启房间当房主，然后其他人加入游戏。同时，房主卡，其他人跟着卡，房主推出房间，其他人也会掉。虽然目前只能这样，但是我觉得有得玩我就很高兴了😂</p>
+<h4 id="对于启动器"><a href="#对于启动器" class="headerlink" title="对于启动器"></a>对于启动器</h4><ul>
+<li><code>-lang [some language]</code>- 将游戏的语言设置为<em>某种语言</em>（考虑到您拥有语言文件）</li>
+<li><code>-masterip [some ip]</code>- 将主服务器的IP地址设置为<em>某个IP</em></li>
+<li><code>-masterport [some port]</code>- 将主服务器的端口号设置为<em>某个端口</em></li>
+<li><code>-decryptedfiles</code> - 告诉游戏将每个游戏文件视为已解密</li>
+<li><code>-enablecustom</code>- 允许在<code>custom</code>游戏文件的根目录中使用自定义目录</li>
+<li><code>-username [your username]</code> - 指定登录用户名，以跳过登录屏幕。<strong>必须</strong>使用<code>-password</code></li>
+<li><code>-password [your password]</code> - 指定登录密码，以跳过登录屏幕。<strong>必须</strong>使用<code>-username</code></li>
+</ul>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>直接运行游戏根目录下的<code>PlayCSO2.exe</code>,如图：</p>
+<p><img src="/cso2/cs005.png" alt></p>
+<p>然后点击游戏设定，分别如下面的图片所示，自己视情况设定选项：</p>
+<p><img src="/cso2/cs006.png" alt></p>
+<p><img src="/cso2/cs007.png" alt></p>
+<p><img src="/cso2/cs008.png" alt></p>
+<p>然后点击保存，如果询问你是都要构建服务器之类的，或者是其它的，直接允许即可！然后根据你的网络情况，可以选择本地启动游戏，或者是连接到其它服务器加入游戏！开始游玩吧！</p>
+<p>运行成功之后，会有cso2_launcher.ini，这个文件里面有登陆账号和密码，是你不联网的情况下，在本地使用的。</p>
+<h3 id="其它方法"><a href="#其它方法" class="headerlink" title="其它方法"></a>其它方法</h3><p><del>这个其它方法嘛，就是各个搭建私服的工作组，给大家介绍的玩他们的私服的方法，略有不同，具体的自己去看看呢！</del>建议有条件玩外(私)服，国内的私服。。。</p>
+<h2 id="再次鸣谢"><a href="#再次鸣谢" class="headerlink" title="再次鸣谢"></a>再次鸣谢</h2><p>感谢Ochii，主服务器GitHub👉<a href="https://github.com/Ochii/cso2-master-server" target="_blank" rel="noopener">地址</a>，客户端启动程序GitHub👉<a href="https://github.com/Ochii/cso2-launcher/" target="_blank" rel="noopener">地址</a>，感谢！均有MIT许可证许可！</p>
+<p>感谢“I’m Not MentaL”大神的GUI启动器，他的👉<a href="https://www.patreon.com/posts/counter-strike-2-24597456?fbclid=IwAR25UBDEym2WhYishRcbFUtUD7URm1Z4phQOl9AsUGse7nERP0dFOy1Dwhg" target="_blank" rel="noopener">Patreon</a>！感谢！</p>
+<p>Counter-Strike Online2的👉<a href="https://csonline2.net/" target="_blank" rel="noopener">网站</a>，感谢！</p>
+<p>Counter-Strike Online2的👉<a href="https://csonline2.net/forum/" target="_blank" rel="noopener">论坛</a>，感谢！</p>
+<p><del>我知道的2个QQ群，我也有在玩，欢迎一起啊！</del></p>
+<p><del>分别是：😡已被踢、😡已被踢、😡自己退了，还有其它群我不知道的欢迎联系我！！！</del></p>
+<p>感谢<del>你们</del>国外大神所做出的努力！</p>
+<p>这些群已经开始膨胀了，恶意竞争为什么要恶心玩家，只允许玩家呆在一个群？？？自己找不到别的群的“奸细”就这样？我什么时候进的群你们群管理没*数？被踢了然后重新加群，其它群员怎么说的我自己不会看聊天记录？我没有得罪任何人，我是真受不了这个委屈，反正你们也不差我这一个玩家！</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p><del>我录制的视频还在审核中。。。完毕了甩链接！YouTube不让上传。。。</del></p>
+<iframe width="680" height="360" src="https://www.youtube-nocookie.com/embed/4qsRxFNMuL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>视频链接👉<a href="https://youtu.be/4qsRxFNMuL0" target="_blank" rel="noopener">https://youtu.be/4qsRxFNMuL0</a></p>
+<p>有什么问题或建议，欢迎留言或者发邮箱。<del>这里没有商业合作，每一个团队需要宣传都欢迎联系我！</del>感谢无私帮助玩家们的开发者们，你们辛苦了！~~感谢国外的几个大神！</p>
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+	
+	
+		<div>
+			<div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- 本文结束 </span>
+      <i class="fa fa-paw"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+  
+</div>
+		</div>
+	
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Bess Croft wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎订阅本博客！</div>
+</div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Bess Croft 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="Bess Croft 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Bess Croft</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://yoursite.com/cso2.html" title="Playing CSO2 on your computer！">http://yoursite.com/cso2.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/CSO2/" rel="tag"><i class="fa fa-tag"></i> CSO2</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/googlesitemap.html" rel="prev" title="Google sitemap不允许的网址解决办法">
+                <i class="fa fa-chevron-left"></i> Google sitemap不允许的网址解决办法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ftp.html" rel="next" title="FTP的搭建和使用">
+                FTP的搭建和使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+				<a href="/">
+				  <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="Bess Croft">
+				</a>	
+            
+              <p class="site-author-name" itemprop="name">Bess Croft</p>
+              <div class="site-description motion-element" itemprop="description">肥宅程序员</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/bessyjl" title="GitHub &rarr; https://github.com/bessyjl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:631908942@qq.com" title="E-Mail &rarr; mailto:631908942@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/KingDragonYJL" title="Twitter &rarr; https://twitter.com/KingDragonYJL" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" title="YouTube &rarr; https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                友♂链
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhuimeng.online/about/" title="http://www.zhuimeng.online/about/" rel="noopener" target="_blank">关于此博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://inspurer.github.io/" title="https://inspurer.github.io/" rel="noopener" target="_blank">月小水长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.heanny.cn/" title="http://www.heanny.cn/" rel="noopener" target="_blank">Heanny Blog</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/01/2019 20:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#想法"><span class="nav-number">1.1.</span> <span class="nav-text">想法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gaming"><span class="nav-number">2.</span> <span class="nav-text">Gaming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#浅谈"><span class="nav-number">2.1.</span> <span class="nav-text">浅谈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number">2.2.</span> <span class="nav-text">致谢</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#要求"><span class="nav-number">2.3.</span> <span class="nav-text">要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备"><span class="nav-number">2.4.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本步骤"><span class="nav-number">2.5.</span> <span class="nav-text">基本步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构建游戏"><span class="nav-number">3.</span> <span class="nav-text">构建游戏</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一"><span class="nav-number">3.1.</span> <span class="nav-text">方法一</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建"><span class="nav-number">3.1.1.</span> <span class="nav-text">搭建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行参数"><span class="nav-number">3.1.2.</span> <span class="nav-text">命令行参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">3.1.3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开始游戏"><span class="nav-number">3.1.4.</span> <span class="nav-text">开始游戏</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对于启动器"><span class="nav-number">3.1.5.</span> <span class="nav-text">对于启动器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二"><span class="nav-number">3.2.</span> <span class="nav-text">方法二</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它方法"><span class="nav-number">3.3.</span> <span class="nav-text">其它方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#再次鸣谢"><span class="nav-number">4.</span> <span class="nav-text">再次鸣谢</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">5.</span> <span class="nav-text">最后</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-globe"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bess Croft</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">67k</span>
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.2"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'eNb2EO3GlG8wtm8v8WsS7AHv-gzGzoHsz',
+    appKey: 'AwvlxF8qgD3zr3Ieb4dvuI1n',
+    placeholder: '说点儿什么吧~ o(*￣▽￣*)o，记得留下邮箱，方便我及时回复！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 18371,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+</html>
+
+
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+
+        
+          $('#sidebar').wobbleWindow({
+            radius: 50,
+            movementLeft: false,
+            movementTop: false,
+            movementBottom: false,
+            position: 'fixed',
+            debug: false,
+          });
+        
+
+        
+      });
+    }
+  </script>
+
+
+
+
+<canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+
+
+  <script async src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>

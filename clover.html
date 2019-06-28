@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="写在前面这可能、应该、也许是我写的最后一篇黑苹果相关文章(至少在我买新电脑之前)，以后精力全部放在学习上，建议后来想要研究黑苹果的同学们早日弃坑，把时间放在更宝贵的事情上吧。经过一些调查，很多同学们装黑苹果的原因无非就是：折腾，当然也有其它的回答。但是，折腾的同时也确实可以学到很多东西。我想说的是，虽然黑苹果非常适合爱折腾的你，但是，折腾明白之后、或者是折腾不来，那么还是劝你早日退坑。。。">
+<meta name="keywords" content="黑苹果,暗影精灵">
+<meta property="og:type" content="article">
+<meta property="og:title" content="黑苹果教程">
+<meta property="og:url" content="http://yoursite.com/clover.html">
+<meta property="og:site_name" content="Bess&#39;s Blog">
+<meta property="og:description" content="写在前面这可能、应该、也许是我写的最后一篇黑苹果相关文章(至少在我买新电脑之前)，以后精力全部放在学习上，建议后来想要研究黑苹果的同学们早日弃坑，把时间放在更宝贵的事情上吧。经过一些调查，很多同学们装黑苹果的原因无非就是：折腾，当然也有其它的回答。但是，折腾的同时也确实可以学到很多东西。我想说的是，虽然黑苹果非常适合爱折腾的你，但是，折腾明白之后、或者是折腾不来，那么还是劝你早日退坑。。。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://psme57jkk.bkt.clouddn.com/c001.png">
+<meta property="og:image" content="http://psme57jkk.bkt.clouddn.com/c002.jpg">
+<meta property="og:image" content="http://yoursite.com/clover/c003.png">
+<meta property="og:image" content="http://yoursite.com/clover/c004.png">
+<meta property="og:image" content="http://yoursite.com/clover/c005.png">
+<meta property="og:image" content="http://yoursite.com/clover/c006.png">
+<meta property="og:image" content="http://yoursite.com/clover/c007.png">
+<meta property="og:image" content="http://yoursite.com/clover/c008.png">
+<meta property="og:image" content="http://yoursite.com/clover/c009.png">
+<meta property="og:image" content="http://yoursite.com/clover/c010.png">
+<meta property="og:image" content="http://yoursite.com/clover/c011.png">
+<meta property="og:image" content="http://yoursite.com/clover/c012.png">
+<meta property="og:image" content="http://yoursite.com/clover/c013.png">
+<meta property="og:image" content="http://yoursite.com/clover/c014.png">
+<meta property="og:image" content="http://yoursite.com/clover/c015.png">
+<meta property="og:updated_time" content="2019-06-05T10:07:33.100Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="黑苹果教程">
+<meta name="twitter:description" content="写在前面这可能、应该、也许是我写的最后一篇黑苹果相关文章(至少在我买新电脑之前)，以后精力全部放在学习上，建议后来想要研究黑苹果的同学们早日弃坑，把时间放在更宝贵的事情上吧。经过一些调查，很多同学们装黑苹果的原因无非就是：折腾，当然也有其它的回答。但是，折腾的同时也确实可以学到很多东西。我想说的是，虽然黑苹果非常适合爱折腾的你，但是，折腾明白之后、或者是折腾不来，那么还是劝你早日退坑。。。">
+<meta name="twitter:image" content="http://psme57jkk.bkt.clouddn.com/c001.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Bess's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/clover">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>黑苹果教程 | Bess's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Bess's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">www.zhuimeng.online</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-top">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/top/" rel="section"><i class="menu-item-icon fa fa-fw fa-signal"></i> <br>热榜榜</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-books">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/books/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>读书</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-movies">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/movies/" rel="section"><i class="menu-item-icon fa fa-fw fa-video-camera"></i> <br>电影</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-games">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/games/" rel="section"><i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>游戏</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/bessyjl" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/clover.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bess Croft">
+      <meta itemprop="description" content="肥宅程序员">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bess's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">黑苹果教程
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-12 22:01:24" itemprop="dateCreated datePublished" datetime="2019-03-12T22:01:24+08:00">2019-03-12</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/clover.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/clover.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.6k</span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://psme57jkk.bkt.clouddn.com/c001.png" alt></p>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>这可能、应该、也许是我写的最后一篇黑苹果相关文章(至少在我买新电脑之前)，以后精力全部放在学习上，建议后来想要研究黑苹果的同学们早日弃坑，把时间放在更宝贵的事情上吧。经过一些调查，很多同学们装黑苹果的原因无非就是：折腾，当然也有其它的回答。但是，折腾的同时也确实可以学到很多东西。我想说的是，虽然黑苹果非常适合爱折腾的你，但是，折腾明白之后、或者是折腾不来，那么还是劝你早日退坑。。。</p>
+<a id="more"></a>
+<p><img src="http://psme57jkk.bkt.clouddn.com/c002.jpg" alt></p>
+<h2 id="配置一览表"><a href="#配置一览表" class="headerlink" title="配置一览表"></a>配置一览表</h2><table>
+<thead>
+<tr>
+<th>OMEN by HP Laptop 15-ce0xx</th>
+<th>HP 暗影精灵3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BIOS版本</td>
+<td>F.18-11/09/2018</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>i7-7700HQ</td>
+</tr>
+<tr>
+<td>显卡</td>
+<td>nVidia GTX 1050</td>
+</tr>
+<tr>
+<td>声卡</td>
+<td>ALC295</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>HP SSD EX950 512G、HGST 1T</td>
+</tr>
+</tbody></table>
+<p>如果你的电脑和我同配置的话，EFI文件可以直接用我的安装使用，配置相仿的不可以直接使用，自己可以根据我的配置按需调整。但是请注意，我GitHub里的并不是完整的EFI，但是足够跟我同配置的同学安装使用了。</p>
+<h2 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>相关的文件我都在我的GitHub发布了，打不开或者下载不来的，自己多研究研究吧，一切随缘！！！（当然这个项目可能还不太完善，我会慢慢整理的，避免大家走弯路！当然，你有什么好资源，也可以让我上传，毕竟这是个开源项目！仅限于学习研究使用！），没错，为了方便大家下载，我把文件打包了，不打包有的小伙伴下载不来。👉<a href="https://github.com/bessyjl/HackintoshClover" target="_blank" rel="noopener">GitHub</a></p>
+<h3 id="已经OJBK的，和一些说明"><a href="#已经OJBK的，和一些说明" class="headerlink" title="已经OJBK的，和一些说明"></a>已经OJBK的，和一些说明</h3><ul>
+<li>小太阳(亮度调节)正常，打了补丁</li>
+<li>声卡驱动正常，没发现破音</li>
+<li>配置页面显示正常</li>
+<li>所有功能正常使用，无报错，包括APP Store、Facetime、iTunes等</li>
+<li>触摸板、电池均正常</li>
+<li>休眠正常</li>
+<li>蓝牙没用过，不知道。。。</li>
+<li>机器上所有接口均正常，除了type-c接口没试过，我没有配件用的上这个接口</li>
+<li>有线网卡正常，无线网卡无解</li>
+<li>原生电源驱动正常，电池显示打了补丁</li>
+<li>USB限制，不知道是解除了还是压根就没有，<a href="http://bbs.pcbeta.com/viewthread-1804129-1-1.html" target="_blank" rel="noopener">远景有篇帖子可以看看</a></li>
+<li>等等，不一一列举了！</li>
+</ul>
+<h3 id="BIOS设置"><a href="#BIOS设置" class="headerlink" title="BIOS设置"></a>BIOS设置</h3><p>HP的BIOS建议：</p>
+<ul>
+<li>关闭安全模式</li>
+</ul>
+<p>其它品牌建议还要：设置为AHCI模式</p>
+<p>嗯~ o(<em>￣▽￣</em>)o，有空再写，不着急。。。</p>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>在开始前，我们建议你准备一个最好大于8G的U盘、一台电脑(不熟练的人建议2台)、一个具有你Windows系统恢复介质的U盘(因为装黑苹果导致Windows挂掉的人不在少数)，一个用来备份的移动硬盘(如果你没有需要备份的文件请随意)。</p>
+<ol>
+<li>原版镜像，注意是原版的加工封装的OS镜像，带不带Clover引导无所谓，新手建议带上，那样就不用自己配置了！</li>
+<li>U盘烧写工具，有很多，我用的TransMac，所以建议使用TransMac。</li>
+<li>硬盘管理工具，这个当然是DG了！</li>
+<li>EFI启动引导项管理工具，推荐EasyUEFI或者UEFIBCD。</li>
+<li>强制性要求：主板必须支持UEFI，这篇文章是适用于UEFI启动的，如果不是的话，你看这篇文章也没意义。</li>
+<li>硬盘为GPT格式。</li>
+<li>给黑苹果的EFI分区一定要大于200M！！！</li>
+</ol>
+<h3 id="安装MacOS"><a href="#安装MacOS" class="headerlink" title="安装MacOS"></a>安装MacOS</h3><p>开机按F9进入<code>Boot Manager</code>引导管理，选择你制作的那个U盘，然后回车！</p>
+<p>然后进入Clover主菜单</p>
+<p><img src="/clover/c003.png" alt></p>
+<p>移动光标到<code>Boot OS X Install from ***</code>回车,如果无法进入安装界面,需要打开啰嗦模式进行排错,不过新手可能看不懂，但是也要拍照，给知道的人帮忙看看。</p>
+<h4 id="引导MacOS"><a href="#引导MacOS" class="headerlink" title="引导MacOS"></a>引导MacOS</h4><p><img src="/clover/c004.png" alt></p>
+<p>基本上就是图中的样子啦！稍等片刻。具体时间决定于你的配置，耐心等待一小会儿进入安装程序界面。</p>
+<h4 id="语言选择"><a href="#语言选择" class="headerlink" title="语言选择"></a>语言选择</h4><p>建议选择简体中文哦！😋</p>
+<p><img src="/clover/c005.png" alt></p>
+<p>点击下一步，出现<code>macOS实用工具</code>界面,选择磁盘工具</p>
+<p><img src="/clover/c006.png" alt></p>
+<p>进入磁盘工具之后，选择<code>显示所有设备</code>:</p>
+<p><img src="/clover/c007.png" alt></p>
+<p>选择<code>你在Windows下事先创建好，准备给macos用的那个分区</code>,点击<code>抹掉</code>按钮,选择默认的<code>Mac OS扩展(日志型)</code>,将名称修改为<code>你自己喜欢的名字即可</code>,点击<code>抹掉</code>按钮。</p>
+<p><strong>之前专门强调了备份了的啊！！！千万注意！！！</strong></p>
+<p>如果这时候报错，是由于EFI分区尺寸小于200MB而引起的抹盘失败的错误，甚至可能会导致后面的安装失败！！！</p>
+<h4 id="安装开始啦！"><a href="#安装开始啦！" class="headerlink" title="安装开始啦！"></a>安装开始啦！</h4><p>这个时候我们选择希望，哦不，是选择安装macOS</p>
+<p><img src="/clover/c008.png" alt></p>
+<p>进入安装界面</p>
+<p><img src="/clover/c009.png" alt></p>
+<p>下一步</p>
+<p><img src="/clover/c010.png" alt></p>
+<p>选择继续，然后选择你才格式化了的硬盘。</p>
+<p>在这期间,它会把USB安装盘上的安装文件预复制到要安装的系统分区里,这个过程在HP暗影精灵3上它跑得飞快(我放在固态上了),数据复制完后,它会自动重启</p>
+<p>其实我感觉安装，和安装完了的设置，压根没必要写啥教程，因为你能进入这个界面的话，说明你的能力足够你一个人完成。</p>
+<h4 id="设置向导"><a href="#设置向导" class="headerlink" title="设置向导"></a>设置向导</h4><p>不多说废话了，也不放图，简单粗暴的列几条建议：</p>
+<ul>
+<li>首先会让你选择国家，在这一步我选择中国！</li>
+<li>设置键盘，根据自己的习惯选择</li>
+<li>如果是新安装，建议不传输信息到这台Mac</li>
+<li>数据恢复，嗯，跳过吧</li>
+<li>Apple ID登录，建议进入系统后再登录</li>
+<li>创建用户，这一步很简单</li>
+<li>反正有啥要你同步的一律先不干，也不要连接到互联网，建议进入系统后再慢慢设置。</li>
+</ul>
+<h3 id="安装完成后"><a href="#安装完成后" class="headerlink" title="安装完成后"></a>安装完成后</h3><p>千万别以为这样就完事儿了，Windows安装完之后都还需要联网安装更新呢，后面更艰巨的任务在等着你，小老弟🤣</p>
+<h4 id="挂载EFI分区"><a href="#挂载EFI分区" class="headerlink" title="挂载EFI分区"></a>挂载EFI分区</h4><p>首先你肯定得把你U盘里的EFI文件弄到电脑上的EFI分区里去，如果你不愿意干这一步，那么你每次启动MacOS都将插上U盘。虽然我有一段时间这么干过，因为我觉得不插上U盘的时候，感觉MacOS系统就不存在了一样，要用的时候直接插上U盘即可！如果你想将U盘里的EFI复制到磁盘的EFI分区里，却苦于找不到看不见EFI分区，这个时候是该让<code>diskutil</code>登场了。</p>
+<p>查看磁盘分区表：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskutil <span class="built_in">list</span></span><br></pre></td></tr></table></figure>
+
+<p>挂载磁盘EFI分区：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount <span class="tag">&lt;<span class="name">这里填你的分区，比如：disk0s1，具体的查看你的磁盘分区表</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>挂载U盘EFI分区：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount <span class="tag">&lt;<span class="name">这里填你的分区，比如：disk0s1，具体的查看你的磁盘分区表</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>打开Finder，注意后面有个<code>.</code></p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">open</span> .</span><br></pre></td></tr></table></figure>
+
+<p>左侧会显示挂载了两个EFI分区，将U盘EFI目录全部复制到磁盘的EFI分区即可。</p>
+<h4 id="合并EFI分区"><a href="#合并EFI分区" class="headerlink" title="合并EFI分区"></a>合并EFI分区</h4><p><strong>这里有一点需要注意</strong>:如果之前安装过Windows系统的话,会存在EFI的目录,只是EFI的目录下面只有BOOT和Microsoft这两个目录,如果希望添加macOS的Clover引导的话,可以将USB的EFI分区里面的EFI目录下面的CLOVER复制到磁盘里的EFI目录下,也就是执行的是<strong>合并</strong>的操作,让EFI同时支持WINDOWS和macOS的引导.千万不要全部复制,否则有可能造成EFI无法启动Windows.</p>
+<h4 id="复制EFI分区"><a href="#复制EFI分区" class="headerlink" title="复制EFI分区"></a>复制EFI分区</h4><p>如果磁盘上的EFI分区里为空的,可以直接将USB的EFI分区下面的EFI目录直接复制到磁盘上的EFI分区里.</p>
+<h4 id="Windows下的骚操作"><a href="#Windows下的骚操作" class="headerlink" title="Windows下的骚操作"></a>Windows下的骚操作</h4><h5 id="挂载EFI分区-1"><a href="#挂载EFI分区-1" class="headerlink" title="挂载EFI分区"></a>挂载EFI分区</h5><p>Windows操作系统下面,打开<code>cmd</code>窗口,输入命令:</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">diskpart</span><br><span class="line">list disk           <span class="comment"># 磁盘列表</span></span><br><span class="line"><span class="keyword">select</span> disk n       <span class="comment"># 选择EFI分区所在的磁盘，n为磁盘号</span></span><br><span class="line"><span class="keyword">list</span> <span class="keyword">partition</span>      <span class="comment"># 磁盘分区列表</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">partition</span> n  <span class="comment"># 选择EFI分区，n为EFI分区号</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">id</span>=<span class="string">"ebd0a0a2-b9e5-4433-87c0-68b6b72699c7"</span>	<span class="comment"># 设置为EFI分区</span></span><br><span class="line">assign letter=X     <span class="comment"># x为EFI分区盘符</span></span><br></pre></td></tr></table></figure>
+
+<p>您可以重复输入命令同时挂载USB的EFI分区和磁盘的EFI分区<br>打开资源管理器，会出现一个盘符为X的磁盘，格式化为fat32格式,将USB的EFI分区下面的EFI目录复制到安装磁盘的EFI分区下。</p>
+<h5 id="合并EFI分区-1"><a href="#合并EFI分区-1" class="headerlink" title="合并EFI分区"></a>合并EFI分区</h5><p><strong>这里有一点需要注意</strong>:如果之前安装过Windows系统的话,会存在EFI的目录,只是EFI的目录下面只有BOOT和Microsoft这两个目录,如果希望添加macOS的Clover引导的话,可以将USB的EFI分区里面的EFI目录下面的CLOVER复制到磁盘里的EFI目录下,也就是执行的是<strong>合并</strong>的操作,让EFI同时支持WINDOWS和macOS的引导.千万不要全部复制,否则有可能造成EFI无法启动Windows.</p>
+<h5 id="复制EFI分区-1"><a href="#复制EFI分区-1" class="headerlink" title="复制EFI分区"></a>复制EFI分区</h5><p>如果磁盘上的EFI分区里为空的,可以直接将USB的EFI分区下面的EFI目录直接复制到磁盘上的EFI分区里.</p>
+<h5 id="利用EasyUEFI来挂载"><a href="#利用EasyUEFI来挂载" class="headerlink" title="利用EasyUEFI来挂载"></a>利用EasyUEFI来挂载</h5><p>什么?看不懂这些指令，怕出错？我懂你！你可以在Windows系统下利用诸如EasyUEFI等工具来操作。</p>
+<p>我们打开下载好的diskgenius工具</p>
+<p><img src="/clover/c011.png" alt></p>
+<p>EFI分区的文件一般是这样的</p>
+<p><img src="/clover/c012.png" alt></p>
+<p>打开EsayUEFI，点击中间的绿色加号，进入添加引导项的页面，选择”Linux或其它操作系统”，并且在Description这一项写入这个引导项的名字(名字可以随便乱取，但是别忘记！)。然后在下面的硬盘选择区域选择一个你自己新建的ESP分区，然后点击下方的Browse浏览文件。</p>
+<p><img src="/clover/c013.png" alt></p>
+<p>然后选择自己配置好的EFI中的<strong>CLOVERx64.efi</strong>这个文件以完成添加。</p>
+<p><img src="/clover/c014.png" alt></p>
+<p>然后回到工具的首页，将该引导项置顶(置不置顶看你自己选择了，想要开机可以选择双系统就置顶，想要开机直接进入Windows，就放在Windows Boot Manager后面)</p>
+<p><img src="/clover/c015.png" alt></p>
+<p>到这里就大功告成啦！</p>
+<h5 id="EasyUEFI报错"><a href="#EasyUEFI报错" class="headerlink" title="EasyUEFI报错"></a>EasyUEFI报错</h5><ul>
+<li>这个可能是因为BIOS设置问题，如果加了BIOS密码，会报这个错误。还有可能就是EFI分区没有正常挂载的原因。遇到这个问题，有的时候照样能够添加进去引导项，但是无法移动引导项的顺序。这样的话，你可以先添加，再进入BIOS设置引导顺序，或者是直接在BIOS里面添加启动项。如果EasyUEFI完全没有作用，你可以尝试进入PE卸载ESP分区重新启动或是先备份系统的EFI分区，然后使用DG将原本的EFI分区删除，重建以后重启即可。</li>
+<li>可能是当前版本的EasyUEFI出现了问题、或者是你下的有问题、或者是当前版本与你的电脑不兼容</li>
+</ul>
+<h5 id="利用BOOTICE"><a href="#利用BOOTICE" class="headerlink" title="利用BOOTICE"></a>利用BOOTICE</h5><ol>
+<li>打开BOOTICE软件,选择<code>物理磁盘</code>,选择欲操作的目标磁盘,点击<code>分区管理</code>,弹出分区管理的窗口,点击<code>分配盘符</code>,为<code>ESP</code>分区分配一个盘符,点击确定</li>
+<li>选择<code>UEFI</code>,点击<code>修改启动序列</code>,点击<code>添加</code>按钮,菜单标题填写:<code>CLOVER</code>,选择<code>启动文件</code>,在打开的窗口里选择<code>ESP</code>分区下的目录<code>\EFI\CLOVER\CLOVERX64.EFI</code>,点击<code>保存当前启动项设置</code></li>
+</ol>
+<h2 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h2><p>迅雷离线下载：<a href="https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS%20Mojave%2010.14.3%2818D42%29%20Installer%20with%20Clover%204859.dmg" target="_blank" rel="noopener">点击下载</a>感谢<code>@难忘情怀</code>提供下载资源</p>
+<p>http下载链接：<a href="https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/" target="_blank" rel="noopener">点击下载</a>感谢<code>@难忘情怀</code>提供下载资源</p>
+<p>百度网盘：<a href="https://pan.baidu.com/s/1mEqQKm_klaSOB5KhqpobQA" target="_blank" rel="noopener">点击链接</a> 接头暗号：s68r<br>MD5 (macOS Mojave 10.14.3(18D42) Installer with Clover 4859.dmg) = 450c55e5c5d3f4bfae6bb55ff2a33aea</p>
+<h3 id="EFI下载-更新"><a href="#EFI下载-更新" class="headerlink" title="EFI下载/更新"></a>EFI下载/更新</h3><p><a href="https://github.com/bessyjl/HackintoshClover" target="_blank" rel="noopener">点击这里</a>进入魔法门</p>
+<h2 id="特别鸣谢"><a href="#特别鸣谢" class="headerlink" title="特别鸣谢"></a>特别鸣谢</h2><p><code>@原味菠萝</code> <code>@黑果小兵</code> 为本教程提供的的大力支持！</p>
+<h3 id="黑苹果友链"><a href="#黑苹果友链" class="headerlink" title="黑苹果友链"></a>黑苹果友链</h3><p>我的<a href="https://github.com/bessyjl/HackintoshClover" target="_blank" rel="noopener">GitHub</a>整理了一些资源、EFI(目前只上传了暗影精灵的)，还有一些可供参考的网站。友链也放在里面了，欢迎大家访问！</p>
+<h2 id="暂时先写这么多，学业繁忙！"><a href="#暂时先写这么多，学业繁忙！" class="headerlink" title="暂时先写这么多，学业繁忙！"></a>暂时先写这么多，学业繁忙！</h2>
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+	
+	
+		<div>
+			<div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- 本文结束 </span>
+      <i class="fa fa-paw"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+  
+</div>
+		</div>
+	
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Bess Croft wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎订阅本博客！</div>
+</div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Bess Croft 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="Bess Croft 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Bess Croft</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://yoursite.com/clover.html" title="黑苹果教程">http://yoursite.com/clover.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/黑苹果/" rel="tag"><i class="fa fa-tag"></i> 黑苹果</a>
+          
+            <a href="/tags/暗影精灵/" rel="tag"><i class="fa fa-tag"></i> 暗影精灵</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/sao.html" rel="prev" title="Hexo之魔法操作">
+                <i class="fa fa-chevron-left"></i> Hexo之魔法操作
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/hexo.html" rel="next" title="Hexo博客搭建">
+                Hexo博客搭建 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+				<a href="/">
+				  <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="Bess Croft">
+				</a>	
+            
+              <p class="site-author-name" itemprop="name">Bess Croft</p>
+              <div class="site-description motion-element" itemprop="description">肥宅程序员</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/bessyjl" title="GitHub &rarr; https://github.com/bessyjl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:631908942@qq.com" title="E-Mail &rarr; mailto:631908942@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/KingDragonYJL" title="Twitter &rarr; https://twitter.com/KingDragonYJL" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" title="YouTube &rarr; https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                友♂链
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhuimeng.online/about/" title="http://www.zhuimeng.online/about/" rel="noopener" target="_blank">关于此博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://inspurer.github.io/" title="https://inspurer.github.io/" rel="noopener" target="_blank">月小水长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.heanny.cn/" title="http://www.heanny.cn/" rel="noopener" target="_blank">Heanny Blog</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/01/2019 20:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置一览表"><span class="nav-number">2.</span> <span class="nav-text">配置一览表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装准备"><span class="nav-number">3.</span> <span class="nav-text">安装准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载"><span class="nav-number">3.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#已经OJBK的，和一些说明"><span class="nav-number">3.2.</span> <span class="nav-text">已经OJBK的，和一些说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BIOS设置"><span class="nav-number">3.3.</span> <span class="nav-text">BIOS设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备"><span class="nav-number">3.4.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MacOS"><span class="nav-number">3.5.</span> <span class="nav-text">安装MacOS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#引导MacOS"><span class="nav-number">3.5.1.</span> <span class="nav-text">引导MacOS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#语言选择"><span class="nav-number">3.5.2.</span> <span class="nav-text">语言选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装开始啦！"><span class="nav-number">3.5.3.</span> <span class="nav-text">安装开始啦！</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置向导"><span class="nav-number">3.5.4.</span> <span class="nav-text">设置向导</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装完成后"><span class="nav-number">3.6.</span> <span class="nav-text">安装完成后</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#挂载EFI分区"><span class="nav-number">3.6.1.</span> <span class="nav-text">挂载EFI分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合并EFI分区"><span class="nav-number">3.6.2.</span> <span class="nav-text">合并EFI分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制EFI分区"><span class="nav-number">3.6.3.</span> <span class="nav-text">复制EFI分区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Windows下的骚操作"><span class="nav-number">3.6.4.</span> <span class="nav-text">Windows下的骚操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#挂载EFI分区-1"><span class="nav-number">3.6.4.1.</span> <span class="nav-text">挂载EFI分区</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#合并EFI分区-1"><span class="nav-number">3.6.4.2.</span> <span class="nav-text">合并EFI分区</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#复制EFI分区-1"><span class="nav-number">3.6.4.3.</span> <span class="nav-text">复制EFI分区</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#利用EasyUEFI来挂载"><span class="nav-number">3.6.4.4.</span> <span class="nav-text">利用EasyUEFI来挂载</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#EasyUEFI报错"><span class="nav-number">3.6.4.5.</span> <span class="nav-text">EasyUEFI报错</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#利用BOOTICE"><span class="nav-number">3.6.4.6.</span> <span class="nav-text">利用BOOTICE</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载链接"><span class="nav-number">4.</span> <span class="nav-text">下载链接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#EFI下载-更新"><span class="nav-number">4.1.</span> <span class="nav-text">EFI下载/更新</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特别鸣谢"><span class="nav-number">5.</span> <span class="nav-text">特别鸣谢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#黑苹果友链"><span class="nav-number">5.1.</span> <span class="nav-text">黑苹果友链</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#暂时先写这么多，学业繁忙！"><span class="nav-number">6.</span> <span class="nav-text">暂时先写这么多，学业繁忙！</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-globe"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bess Croft</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">67k</span>
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.2"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'eNb2EO3GlG8wtm8v8WsS7AHv-gzGzoHsz',
+    appKey: 'AwvlxF8qgD3zr3Ieb4dvuI1n',
+    placeholder: '说点儿什么吧~ o(*￣▽￣*)o，记得留下邮箱，方便我及时回复！',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 18371,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+</html>
+
+
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+
+        
+          $('#sidebar').wobbleWindow({
+            radius: 50,
+            movementLeft: false,
+            movementTop: false,
+            movementBottom: false,
+            position: 'fixed',
+            debug: false,
+          });
+        
+
+        
+      });
+    }
+  </script>
+
+
+
+
+<canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+
+
+  <script async src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>
