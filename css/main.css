@@ -584,7 +584,7 @@ pre,
 }
 pre,
 code {
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: consolas, Menlo, 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif, monospace;
 }
 code {
   overflow-wrap: break-word;
@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4125ff;
+  background: #7a8177;
 }
 .feed-link,
 .chat {
