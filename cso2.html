@@ -572,19 +572,6 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/cso2.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/cso2.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -643,10 +630,10 @@
 <a id="more"></a>
 
 
-        <div id="aplayer-LVpyeYhT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-WeAfqAcU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":true,"showlrc":3,"mode":"random","music":[{"title":"Welcome Back","author":"Nexon","url":"http://ptzoq8yi5.bkt.clouddn.com/Nexon%20-%20Welcome%20Back.mp3","pic":"http://ptzoq8yi5.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"We Wish You A Merry X-Mas","author":"Nexon","url":"http://ptzoq8yi5.bkt.clouddn.com/Nexon%20-%20We%20Wish%20You%20A%20Merry%20X-Mas.mp3","pic":"http://ptzoq8yi5.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"Lobby","author":"Nexon","url":"http://ptzoq8yi5.bkt.clouddn.com/Nexon%20-%20Lobby.mp3","pic":"http://ptzoq8yi5.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"躲猫猫特殊回合","author":"Nexon","url":"http://ptzoq8yi5.bkt.clouddn.com/Nexon%20-%20%E8%BA%B2%E7%8C%AB%E7%8C%AB%E7%89%B9%E6%AE%8A%E5%9B%9E%E5%90%88.mp3","pic":"http://ptzoq8yi5.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"},{"title":"CSO2","author":"Nexon","url":"http://ptzoq8yi5.bkt.clouddn.com/Nexon%20-%20CSO2.mp3","pic":"http://ptzoq8yi5.bkt.clouddn.com/We%20Wish%20You%20A%20Merry%20X-Mas.png"}]};
-				  options.element = document.getElementById("aplayer-LVpyeYhT");
+				  options.element = document.getElementById("aplayer-WeAfqAcU");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
@@ -897,7 +884,7 @@
           
 
   
-    <div class="comments" id="comments">
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1388,33 +1375,36 @@ show_date_time();
   
 
   
-  
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
+  var gitalk = new Gitalk({
+    clientID: '42d480d1648ea350fe6a',
+    clientSecret: '5a1c0a8a459310932e700f13e2be37ed6333e01b',
+    repo: 'gitalk_bess',
+    owner: 'bessyjl',
+    admin: ['bessyjl'],
+    id: md5(location.pathname),
+    
+      language: 'zh-CN,zh-TW,en',
+    
+    distractionFreeMode: 'true'
   });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: false,
-    appId: 'eNb2EO3GlG8wtm8v8WsS7AHv-gzGzoHsz',
-    appKey: 'AwvlxF8qgD3zr3Ieb4dvuI1n',
-    placeholder: '说点儿什么吧~ o(*￣▽￣*)o，记得留下邮箱，方便我及时回复！也可以加群：821557332 一起交流！',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false,
-    lang: '' || 'zh-cn'
-  });
+  gitalk.render('gitalk-container');
 </script>
-
-
-
 
   
 

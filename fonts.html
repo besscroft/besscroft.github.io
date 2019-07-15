@@ -561,19 +561,6 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/fonts.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/fonts.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -845,7 +832,7 @@
           
 
   
-    <div class="comments" id="comments">
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1336,33 +1323,36 @@ show_date_time();
   
 
   
-  
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
+  var gitalk = new Gitalk({
+    clientID: '42d480d1648ea350fe6a',
+    clientSecret: '5a1c0a8a459310932e700f13e2be37ed6333e01b',
+    repo: 'gitalk_bess',
+    owner: 'bessyjl',
+    admin: ['bessyjl'],
+    id: md5(location.pathname),
+    
+      language: 'zh-CN,zh-TW,en',
+    
+    distractionFreeMode: 'true'
   });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: false,
-    appId: 'eNb2EO3GlG8wtm8v8WsS7AHv-gzGzoHsz',
-    appKey: 'AwvlxF8qgD3zr3Ieb4dvuI1n',
-    placeholder: '说点儿什么吧~ o(*￣▽￣*)o，记得留下邮箱，方便我及时回复！也可以加群：821557332 一起交流！',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false,
-    lang: '' || 'zh-cn'
-  });
+  gitalk.render('gitalk-container');
 </script>
-
-
-
 
   
 

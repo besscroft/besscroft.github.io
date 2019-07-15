@@ -567,19 +567,6 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/wuyi.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/wuyi.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -636,10 +623,10 @@
 		</script>
         <h2 id="浅谈"><a href="#浅谈" class="headerlink" title="浅谈"></a>浅谈</h2><p>这篇文章，是在五一假期结束之后写的，毕竟五一还是有点忙的！抽了2天时间来重构Hexo的代码，解决了很多未知的问题，每天都忙到凌晨，相信有过共同经历的人会明白的🤣总会有些花里胡哨的瑕疵，反正我是忍不了。😅</p>
 
-        <div id="aplayer-VXTmmBFn" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-iFlhAyko" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":0,"mode":"random","music":[{"title":"大碗宽面","author":"吴亦凡","url":"http://ptzoq8yi5.bkt.clouddn.com/%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2-%E5%90%B4%E4%BA%A6%E5%87%A1.mp3","pic":"http://ptzoq8yi5.bkt.clouddn.com/%E5%A4%A7%E7%A2%97%E5%AE%BD%E9%9D%A2.png"}]};
-				  options.element = document.getElementById("aplayer-VXTmmBFn");
+				  options.element = document.getElementById("aplayer-iFlhAyko");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
@@ -832,7 +819,7 @@
           
 
   
-    <div class="comments" id="comments">
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1323,33 +1310,36 @@ show_date_time();
   
 
   
-  
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
+  var gitalk = new Gitalk({
+    clientID: '42d480d1648ea350fe6a',
+    clientSecret: '5a1c0a8a459310932e700f13e2be37ed6333e01b',
+    repo: 'gitalk_bess',
+    owner: 'bessyjl',
+    admin: ['bessyjl'],
+    id: md5(location.pathname),
+    
+      language: 'zh-CN,zh-TW,en',
+    
+    distractionFreeMode: 'true'
   });
-  new Valine({
-    el: '#comments',
-    verify: true,
-    notify: false,
-    appId: 'eNb2EO3GlG8wtm8v8WsS7AHv-gzGzoHsz',
-    appKey: 'AwvlxF8qgD3zr3Ieb4dvuI1n',
-    placeholder: '说点儿什么吧~ o(*￣▽￣*)o，记得留下邮箱，方便我及时回复！也可以加群：821557332 一起交流！',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false,
-    lang: '' || 'zh-cn'
-  });
+  gitalk.render('gitalk-container');
 </script>
-
-
-
 
   
 
