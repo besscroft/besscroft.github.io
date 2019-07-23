@@ -152,10 +152,12 @@
 <meta property="og:site_name" content="Bess&#39;s Blog">
 <meta property="og:description" content="这是一个简单使用的教程，如果你刚接触git和GitHub，那么，这篇文章再适合你不过了！首先，没有接触过版本控制概念的同学们也可以轻松入门；其次，通过这篇博文，你将学会本地构建仓库、远程克隆仓库、上传本地仓库等魔法操作(语言上可能组织不太好😅)，值得你一看。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-20T13:13:20.348Z">
+<meta property="og:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
+<meta property="og:updated_time" content="2019-07-23T08:47:06.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git本地文件到GitHub仓库">
 <meta name="twitter:description" content="这是一个简单使用的教程，如果你刚接触git和GitHub，那么，这篇文章再适合你不过了！首先，没有接触过版本控制概念的同学们也可以轻松入门；其次，通过这篇博文，你将学会本地构建仓库、远程克隆仓库、上传本地仓库等魔法操作(语言上可能组织不太好😅)，值得你一看。">
+<meta name="twitter:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
 
 
 
@@ -621,7 +623,8 @@
 <h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>首先，我们得弄清楚工作区和暂存区的是怎么回事，不然当你看到这些文件夹，可能一脸问号。</p>
 <h4 id="工作区"><a href="#工作区" class="headerlink" title="工作区"></a>工作区</h4><p>工作区（Working Directory）,是一个你在电脑里能够看到的目录，存放的就是你的本地文件，一般指的是你的仓库根目录下。</p>
 <h4 id="版本库"><a href="#版本库" class="headerlink" title="版本库"></a>版本库</h4><p>版本库（Repository），在你的工作区，细心的小伙伴可能会发现，有一个隐藏的目录，名叫<code>.git</code>,这个就是我们常说的版本库了。版本库里面存放了很多东西，其中最重要的是称为<code>stage</code>的暂存区(或者叫<code>index</code>)和git为我们创建的第一个分支<code>master</code>，以及指向<code>master</code>的一个叫<code>HEAD</code>的指针。</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><h4 id="绑定用户"><a href="#绑定用户" class="headerlink" title="绑定用户"></a>绑定用户</h4><p>首先，我们得将电脑和GitHub账号进行绑定才行，打开GIt Bash，输入以下命令（用户和邮箱为你GitHub注册的账号和邮箱）：</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p><a href="https://www.vultr.com/?ref=8102856-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a></p>
+<h4 id="绑定用户"><a href="#绑定用户" class="headerlink" title="绑定用户"></a>绑定用户</h4><p>首先，我们得将电脑和GitHub账号进行绑定才行，打开GIt Bash，输入以下命令（用户和邮箱为你GitHub注册的账号和邮箱）：</p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>--global user.name <span class="string">"github用户名称"</span></span><br><span class="line">$ git<span class="built_in"> config </span>--global user.email <span class="string">"github注册时的邮箱"</span></span><br></pre></td></tr></table></figure>
 
 <p>比如我这样：</p>

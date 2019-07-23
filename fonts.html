@@ -152,10 +152,12 @@
 <meta property="og:site_name" content="Bess&#39;s Blog">
 <meta property="og:description" content="对于中文书籍来说，宋体一直是正文印刷的标准字体，而不是目前电子显示屏上普遍的黑体，因为宋体的衬线更适合长时间阅读。 本文是针对Hexo博客的NexT主题来设置的，不是这个的小伙伴们也可以参照着来看！ 修改字体修改配置文件中的参数修改配置文件_config.yml ，找到font将下列代码中红色的部分修改成绿色的部分即可。可以根据实际情况稍作修改！ 文件位置:~/blog/themes/next/_">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-01T07:45:40.008Z">
+<meta property="og:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
+<meta property="og:updated_time" content="2019-07-23T08:46:19.468Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="更换为Google Fonts思源宋体！">
 <meta name="twitter:description" content="对于中文书籍来说，宋体一直是正文印刷的标准字体，而不是目前电子显示屏上普遍的黑体，因为宋体的衬线更适合长时间阅读。 本文是针对Hexo博客的NexT主题来设置的，不是这个的小伙伴们也可以参照着来看！ 修改字体修改配置文件中的参数修改配置文件_config.yml ，找到font将下列代码中红色的部分修改成绿色的部分即可。可以根据实际情况稍作修改！ 文件位置:~/blog/themes/next/_">
+<meta name="twitter:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
 
 
 
@@ -623,7 +625,8 @@
 <h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>找到主题的<code>base.styl</code>文件，具体位置为<code>~/blog/themes/next/source/css/_variables/base.styl</code>,然后修改相关数据！</p>
 <figure class="highlight diff"><figcaption><span>文件位置:~/blog/themes/next/source/css/_variables/base.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">-$font-family-monospace    = consolas, Menlo, $font-family-chinese, monospace</span></span><br><span class="line"><span class="addition">+$font-family-monospace    = consolas, Menlo, $font-family-base, monospace</span></span><br><span class="line"><span class="deletion">-$font-family-monospace    = get_font_family('codes'), consolas, Menlo, $font-family-chinese, monospace if get_font_family('codes')</span></span><br><span class="line"><span class="addition">+$font-family-monospace    = get_font_family('codes'), consolas, Menlo, $font-family-base, monospace if get_font_family('codes')</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="自定义项目"><a href="#自定义项目" class="headerlink" title="自定义项目"></a>自定义项目</h3><h4 id="设置字体大小"><a href="#设置字体大小" class="headerlink" title="设置字体大小"></a>设置字体大小</h4><p>如果你看不习惯默认(原来)的字体大小的话，你可以尝试修改它！</p>
+<h3 id="自定义项目"><a href="#自定义项目" class="headerlink" title="自定义项目"></a>自定义项目</h3><p><a href="https://www.vultr.com/?ref=8102856-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a></p>
+<h4 id="设置字体大小"><a href="#设置字体大小" class="headerlink" title="设置字体大小"></a>设置字体大小</h4><p>如果你看不习惯默认(原来)的字体大小的话，你可以尝试修改它！</p>
 <figure class="highlight diff"><figcaption><span>文件位置:~/blog/themes/next/source/css/_variables/base.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// Font size</span><br><span class="line">$font-size-base           = 14px	//改成你想要的即可！</span><br></pre></td></tr></table></figure>
 
 <h4 id="设置字体颜色"><a href="#设置字体颜色" class="headerlink" title="设置字体颜色"></a>设置字体颜色</h4><p>没错，你甚至可以设置不同的颜色！</p>
