@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4a01ff;
+  background: #655efc;
 }
 .feed-link,
 .chat {
@@ -2779,6 +2779,12 @@ body {
 .post-toc .nav .nav-level-1>.nav-child {
   display: block;
 }
+.menu-item-icon {
+  color: #4285f4;
+}
+.github-corner > svg {
+  fill: #4285f4;
+}
 .sidebar-toggle {
   left: 30px;
 }
@@ -2900,7 +2906,7 @@ pre .deletion {
 .sidebar-toggle {
   left: 24px;
   bottom: 43px;
-  background-color: rgba(247,149,51,0.75);
+  background-color: #4285f4;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
 }
@@ -2994,7 +3000,7 @@ span.links-of-author-item {
 }
 #days {
   display: block;
-  color: #07b39b;
+  color: #4285f4;
   font-size: 13px;
   margin-top: 15px;
 }
@@ -3002,8 +3008,8 @@ span.links-of-author-item {
   line-height: 1.5;
   width: 100%;
   bottom: 0;
-  background-color: rgba(255,255,255,0.75);
-  color: #d94167;
+  background-color: #4285f4 !important;
+  color: #fff;
   border-top-width: 3px;
   border-top-style: solid;
   border-top-color: #42d7f5;
@@ -3015,8 +3021,8 @@ span.links-of-author-item {
 }
 .pagination .page-number.current {
   border-radius: 100%;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  background-color: rgba(255,255,255,0.35);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  background-color: #4285f4 !important;
 }
 .pagination .prev,
 .pagination .next,
@@ -3064,6 +3070,7 @@ hr {
   padding-top: 20px;
 }
 .posts-expand .post-meta {
+  color: #4285f4;
   margin: 5px 0px 0px 0px;
 }
 .post-button {
@@ -3101,7 +3108,7 @@ article.post.post-type-normal {
   margin: 0px 0;
 }
 .posts-collapse .post-header::before {
-  background: #0f0;
+  background: #16bdff;
 }
 .pagination {
   padding-top: 20px;
@@ -3115,11 +3122,11 @@ article.post.post-type-normal {
   padding-top: 20px;
 }
 .post-button .btn {
-  color: #555 !important;
-  background-color: #ffe4e1;
+  color: #fff !important;
+  background-color: #4285f4 !important;
   border-radius: 3px;
   font-size: 15px;
-  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   border: none !important;
   transition-property: unset;
   padding: 0px 15px;
@@ -3130,7 +3137,7 @@ article.post.post-type-normal {
   color: #fff !important;
   border-radius: 3px;
   font-size: 15px;
-  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
 }
 .posts-collapse::after {
