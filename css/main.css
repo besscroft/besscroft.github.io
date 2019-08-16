@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #177ca2;
+  background: #bed0ff;
 }
 .feed-link,
 .chat {
@@ -2906,7 +2906,7 @@ pre .deletion {
 .sidebar-toggle {
   left: 24px;
   bottom: 43px;
-  background-color: #4285f4;
+  background-color: #ef4e7b;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
 }
