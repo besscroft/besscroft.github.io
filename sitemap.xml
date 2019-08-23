@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.zhuimeng.online/hexo.html</loc>
+    
+    <lastmod>2019-08-23T15:15:53.558Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.zhuimeng.online/about/index.html</loc>
     
     <lastmod>2019-08-21T12:26:30.531Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>http://www.zhuimeng.online/hpomen3hackintosh.html</loc>
     
     <lastmod>2019-07-23T08:47:53.019Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.zhuimeng.online/hexo.html</loc>
-    
-    <lastmod>2019-07-23T08:47:35.838Z</lastmod>
     
   </url>
   
