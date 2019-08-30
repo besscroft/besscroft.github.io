@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3374244110362851",
+          enable_page_level_ads: true
+     });
+</script>
+  <meta name="description" content="一直以来，都是在虚拟机里面使用Linux系统，但随着使用需求的增加，于是直接在笔记本中安装Ubuntu。基本上就是Windows 10 + Ubuntu18.04LTS双系统共存模式！ 浅谈很多同学在虚拟机中安装Linux(实际上不仅限于Ubuntu)，都会觉得安装很简单，基本上就是一直点下一步之类的，当然了，ArchLinux之流除外哈。不是说ArchLinux不好用(我觉得过渡动画还比较流畅，">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu安装记录">
+<meta property="og:url" content="http://www.zhuimeng.online/ubuntu.html">
+<meta property="og:site_name" content="Bess&#39;s Blog">
+<meta property="og:description" content="一直以来，都是在虚拟机里面使用Linux系统，但随着使用需求的增加，于是直接在笔记本中安装Ubuntu。基本上就是Windows 10 + Ubuntu18.04LTS双系统共存模式！ 浅谈很多同学在虚拟机中安装Linux(实际上不仅限于Ubuntu)，都会觉得安装很简单，基本上就是一直点下一步之类的，当然了，ArchLinux之流除外哈。不是说ArchLinux不好用(我觉得过渡动画还比较流畅，">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu01.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu02.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu03.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu04.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu05.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu06.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu07.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu08.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu04.png">
+<meta property="og:image" content="http://www.zhuimeng.online/ubuntu/ubuntu05.png">
+<meta property="og:updated_time" content="2019-07-23T08:49:31.527Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ubuntu安装记录">
+<meta name="twitter:description" content="一直以来，都是在虚拟机里面使用Linux系统，但随着使用需求的增加，于是直接在笔记本中安装Ubuntu。基本上就是Windows 10 + Ubuntu18.04LTS双系统共存模式！ 浅谈很多同学在虚拟机中安装Linux(实际上不仅限于Ubuntu)，都会觉得安装很简单，基本上就是一直点下一步之类的，当然了，ArchLinux之流除外哈。不是说ArchLinux不好用(我觉得过渡动画还比较流畅，">
+<meta name="twitter:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Bess's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://www.zhuimeng.online/ubuntu">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Ubuntu安装记录 | Bess's Blog</title>
+  
+
+
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144463982-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-144463982-1');
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Bess's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">www.zhuimeng.online</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-links">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/links/" rel="section"><i class="menu-item-icon fa fa-fw fa-link"></i> <br>友链</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-books">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/books/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>读书</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-movies">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/movies/" rel="section"><i class="menu-item-icon fa fa-fw fa-video-camera"></i> <br>电影</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-games">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/games/" rel="section"><i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>游戏</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/bessyjl" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zhuimeng.online/ubuntu.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bess Croft">
+      <meta itemprop="description" content="肥宅程序员">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bess's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Ubuntu安装记录
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-04 15:56:15" itemprop="dateCreated datePublished" datetime="2019-07-04T15:56:15+08:00">2019-07-04</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">5k</span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3374244110362851" data-ad-slot="4231984431"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+        <p>一直以来，都是在虚拟机里面使用Linux系统，但随着使用需求的增加，于是直接在笔记本中安装Ubuntu。基本上就是Windows 10 + Ubuntu18.04LTS双系统共存模式！</p>
+<h2 id="浅谈"><a href="#浅谈" class="headerlink" title="浅谈"></a>浅谈</h2><p>很多同学在虚拟机中安装Linux(实际上不仅限于Ubuntu)，都会觉得安装很简单，基本上就是一直点下一步之类的，当然了，ArchLinux之流除外哈。不是说ArchLinux不好用(我觉得过渡动画还比较流畅，速度也很快)，而是它的安装过程，感觉就是个过滤用户的阴谋😂</p>
+<p>既然要直接在笔记本上安装，那么，肯定会有不少坑的，而且还是双系统共存。最常见的就是分区和假死了吧(卡死在某一界面)。其它的诸如制作镜像，装驱动出现问题，点击现在重启卡死等。我在刚买我的暗影精灵3的时候，就尝试过双系统，然后，你懂的。我直接就留下了心里阴影，因为那时候没做备份，后来我备份的好习惯就是这么被逼出来的🙃</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="电脑配置"><a href="#电脑配置" class="headerlink" title="电脑配置"></a>电脑配置</h3><p>先介绍下我的电脑配置吧。</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">产品名称 : <span class="type">OMEN</span> by HP Laptop <span class="number">15</span>-ce0xx</span><br><span class="line">BIOS : <span class="type">F.18</span>-<span class="number">11</span>/<span class="number">09</span>/<span class="number">2018</span></span><br><span class="line">内存总量 : 16 <span class="type">GB</span></span><br><span class="line">处理器名称 : <span class="type">Intel</span>(R) Core(TM) i7-<span class="number">7700</span>HQ CPU @ <span class="number">2.80</span>GHz</span><br><span class="line">BIOS模式 : <span class="type">UEFI</span></span><br><span class="line">当前系统 : <span class="type">Windows</span> <span class="number">10</span> 家庭中文版 <span class="number">1903</span> 版本<span class="number">18632</span></span><br><span class="line">显卡 : <span class="type">NVIDIA</span> GeForce GTX <span class="number">1050</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.vultr.com/?ref=8102856-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a></p>
+<h3 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h3><p>在哪里下，应该就不用我废话了，我个人更喜欢👍<a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">清华大学开源软件镜像站</a>，大家没下载的可以在这里下。如果是要像我一样，想当作主力系统来用的，就下Ubuntu 18.04.02LTS版本，LTS是官方长期维护的版本，更稳定，一直维护到2023年4月。如果你跟我一样，喜欢最新的事务，那么，Ubuntu 19.04是你不错的选择，自带的UI变漂亮了许多，但遗憾的是，它的支持生命周期只到2020年1月😥</p>
+<p>镜像制作工具，推荐<a href="http://rufus.ie/" target="_blank" rel="noopener">Rufus</a>吧，简单制作个镜像而已，必须要花里胡哨的功能，而且差不多就1M大小，免安装！！！</p>
+<p><img src="/ubuntu/ubuntu01.png" alt></p>
+<p>选项基本跟我保持一致即可，尤其是簇大小，大家都习惯默认的，但是部分奇葩的U盘，默认分配单元大小是16K或者32K，可能会导致安装系统过程中，出现一些不必要的问题。</p>
+<p><strong>然后，在Windows下分一个给Ubuntu用的分区出来，确保为为分配状态！！！</strong></p>
+<h3 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h3><h4 id="BIOS设置"><a href="#BIOS设置" class="headerlink" title="BIOS设置"></a>BIOS设置</h4><p>开机进入BIOS，hp暗影精灵是开机按F10，其它品牌请自行Google！</p>
+<p><img src="/ubuntu/ubuntu02.png" alt></p>
+<p><img src="/ubuntu/ubuntu03.png" alt></p>
+<p>如图，你需要将传统模式和安全启动模式(Secure Boot)都设置为禁用，然后把U盘的启动顺序调整到操作系统管理员的前面。如果你不禁用Secure Boot的话，Ubuntu系统将无法运行，不明白为什么的同学，自行Google！</p>
+<h4 id="禁用N卡"><a href="#禁用N卡" class="headerlink" title="禁用N卡"></a>禁用N卡</h4><p>然后重点来了！！！你这时候应该进入引导界面了，但是不要着急！！！把光标移到<code>Install Ubuntu</code>，先别着急敲下回车键。先按下键盘上的字母键E，然后将<code>quiet splash ---</code>更改为 <code>quiet splash nouveau.modeset=0</code>，如图：</p>
+<p><img src="/ubuntu/ubuntu04.png" alt="ubuntu04"></p>
+<p>改为：</p>
+<p><img src="/ubuntu/ubuntu05.png" alt="ubuntu05"></p>
+<p>我在安装时忘记拍照了，这是在虚拟机中截的图，不过影响不大，只是用来参考的。改完之后，按下Ctrl+X或者F10，具体的那个界面下面会有显示的。</p>
+<div class="note warning"><p>为什么要大家这么做呢？因为自己安装过的朋友，遇到过最头疼的问题应该就是安装过程中卡死了，我曾经也遇到过！没错，就是从你开始安装，直到安装完毕进入Ubuntu的桌面为止，随时都有可能卡死。但是在虚拟机中并不会这样，我去Google查了一下，很多解释差不多是这个意思：Ubuntu是开源系统，但是Nvidia并没有将显卡驱动开源，所以Ubuntu内核中自带的Nvidia显卡驱动版本就没有特别新，就导致安装过程中会卡死。所以进行上面的设置后，禁止Ubuntu加载自带的N卡驱动，问题就解决了。玩过黑苹果的朋友门，应该也碰到过相同的问题吧。</p></div>
+
+<h4 id="安装选项"><a href="#安装选项" class="headerlink" title="安装选项"></a>安装选项</h4><p>只强调2件事，如果禁用N卡驱动之后，窗口变大的话，部分窗口被挤出屏幕，导致鼠标点不到按钮，可以按住Alt键然后用鼠标拖动窗口。其次，建议不要选择最小安装，这样以后你使用是，会少部分依赖库，给你造成麻烦(精通Linux的大神当我没说！)😋</p>
+<h4 id="分区挂载"><a href="#分区挂载" class="headerlink" title="分区挂载"></a>分区挂载</h4><p><img src="/ubuntu/ubuntu06.png" alt></p>
+<p>千万不要偷懒，一定要选择其它选项。</p>
+<p><img src="/ubuntu/ubuntu07.png" alt="ubuntu07"></p>
+<p>挂载分区，因为是UEFI启动模式，所以只少要4个分区，以我的为例，我分了100个G给Ubuntu，且我的运行内存为16G。</p>
+<table>
+<thead>
+<tr>
+<th>分区类型</th>
+<th>挂载点</th>
+<th>大小</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>efi</td>
+<td>efi</td>
+<td>2046MB</td>
+<td>用于安装efi</td>
+</tr>
+<tr>
+<td>swap</td>
+<td>swap</td>
+<td>16386MB</td>
+<td>交换分区</td>
+</tr>
+<tr>
+<td>ext4</td>
+<td>/home</td>
+<td>42859MB</td>
+<td>主目录</td>
+</tr>
+<tr>
+<td>ext4</td>
+<td>/</td>
+<td>46080MB</td>
+<td>根目录</td>
+</tr>
+</tbody></table>
+<p>传统的Boot为主分区，UEFI模式就选择逻辑分区，efi分区用来存储引导器，系统的启动文件等。我分配了2G，硬盘不大的400M左右也可以。</p>
+<p>swap分区选择主分区，这个交换分区就相当于是虚拟内存，一般设置为你的内存大小的同等大小，或者内存的2倍。</p>
+<p><code>/home</code>即主目录，也叫用户的宿主目录。用户登录系统后，所处的位置就是/home，通常用来保存用户文件。没错，什么图片啊、视频啊、你下载的东西啊，都是存在这里的，给多少自己看着办吧。</p>
+<p><code>/</code>即根目录，不要给太小，如果一共就四五十个G，至少也得给15G左右。</p>
+<p>最后，在下面的<code>安装启动引导器的设备</code>那里，<strong>选择你刚才分出来的那个efi分区</strong>(划重点，要考)，然后再点击<code>现在安装</code>。然后后面的一堆设置可以按需求设置，然后，慢慢等。</p>
+<h4 id="重点来了"><a href="#重点来了" class="headerlink" title="重点来了"></a>重点来了</h4><p>这一步很重要，因为实际上整个安装过程并没有结束，你还是得提防Ubuntu有没有搞你。在安装完成之后，系统会提示<code>已安装完成，是否重启</code>，这不废话吗，当然得选择<code>现在重启</code>了(逃)。。。😐</p>
+<p>点击重启之后，拔掉U盘，然后<strong>在开机的品牌logo出现后，按一下、按一下、只按一下键盘左上角的ESC键</strong>。开机的时候，都会出现品牌logo的吧？你看到它之后，按一下就行了。为了防止某些同学说他电脑开机不显示品牌logo，那好，你插上鼠标，等重启后屏幕亮了之后(屏幕是黑色时也有亮的情况，别跟我杠这些)，然后看着你的鼠标，鼠标等亮了之后，按一下ESC键。</p>
+<p><img src="/ubuntu/ubuntu08.png" alt="ubuntu08"></p>
+<p><center>(图片来源于互联网，我没拍照，不过都差不多)</center></p>
+
+<p>这时候出现的画面，就是<code>GRUB</code>引导器，键盘选中<code>Ubuntu</code>这一项，然后按下键盘字母<code>E</code>键，是不是觉得刚才做过这步？是的，按下E之后，一样的操作。</p>
+<p>把光标移到<code>Install Ubuntu</code>，先别着急敲下回车键。先按下键盘上的字母键E，然后将<code>quiet splash ---</code>更改为 <code>quiet splash nouveau.modeset=0</code>，如图：</p>
+<p><img src="/ubuntu/ubuntu04.png" alt="ubuntu04"></p>
+<p>改为：(只要让那一串代码变成下图这样，这串代码前面和后面不变，你不用管它是什么)</p>
+<p><img src="/ubuntu/ubuntu05.png" alt="ubuntu05"></p>
+<p>到这里，应该就可以正常地进入系统了。</p>
+<h2 id="安装之后"><a href="#安装之后" class="headerlink" title="安装之后"></a>安装之后</h2><h3 id="更换镜像源"><a href="#更换镜像源" class="headerlink" title="更换镜像源"></a>更换镜像源</h3><p>由于一系列总所周知的原因，我们需要更换镜像源为国内的源，我推荐使用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/" target="_blank" rel="noopener">清华大学的镜像源</a>，其它源也可以用类似的方法添加。</p>
+<p><strong>先备份好习惯！</strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /etc/apt/sources<span class="selector-class">.list</span> /etc/apt/sources<span class="selector-class">.list</span><span class="selector-class">.bak</span></span><br></pre></td></tr></table></figure>
+
+<p>打开编辑源列表：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/apt/sources.<span class="built_in">list</span></span><br></pre></td></tr></table></figure>
+
+<p>将文件内所有文件清空，然后将下列清华源全部copy进去：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 默认注释了源码镜像以提高 apt <span class="keyword">update</span> 速度，如有需要可自行取消注释</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line"># 预发布软件源，不建议启用</span><br><span class="line"># <span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-proposed main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+
+<p>然后用清华源更新一下：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> update</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> upgrade</span><br></pre></td></tr></table></figure>
+
+<p>如果你不知道这两条命令干嘛的，请自行Google，按理说应该知道的！</p>
+<h3 id="安装nVidia驱动"><a href="#安装nVidia驱动" class="headerlink" title="安装nVidia驱动"></a>安装nVidia驱动</h3><h4 id="自动安装"><a href="#自动安装" class="headerlink" title="自动安装"></a>自动安装</h4><p>推荐使用标准的Ubuntu仓库进行自动化安装，虽然版本不是最新的，但是<strong>更稳定</strong>！！！又不打游戏，用Linux一大原因不就是图个稳定嘛！</p>
+<p>删除现有的系统自带N卡驱动以及相关的所有配置文件等：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> --purge <span class="builtin-name">remove</span> nvidia*</span><br></pre></td></tr></table></figure>
+
+<p>查看显卡设备，并显示系统推荐的驱动版本：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ubuntu-drivers devices</span></span><br></pre></td></tr></table></figure>
+
+<p>安装系统推荐的驱动：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo ubuntu-drivers autoinstall</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="其它方案"><a href="#其它方案" class="headerlink" title="其它方案"></a>其它方案</h4><p>自行Google好嘛，只让你看最稳定的方式，要追求刺激，可以自己去追求，我怕出了问题要来怪我！</p>
+<p>安装完之后，开机就不用再去设置了(重启后生效！)</p>
+<h2 id="配置优化"><a href="#配置优化" class="headerlink" title="配置优化"></a>配置优化</h2><p>到这里基本上就结束了，其它的使用，我可以给一些建议！</p>
+<ul>
+<li><p>安装中文输入法，如：<code>搜狗</code>。</p>
+</li>
+<li><p>安装浏览器，如：<code>chrome</code>。</p>
+</li>
+<li><p>彻底卸载办公软件Libreoffice，改用WPS等。</p>
+</li>
+</ul>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-calc	<span class="comment">//卸载libreoffice表格</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-draw	<span class="comment">//卸载libreoffice绘图</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-impress <span class="comment">//卸载libreoffice幻灯片</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-writer  <span class="comment">//卸载libreoffice文档</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice*		<span class="comment">//清理所有libreoffice相关</span></span><br><span class="line">sudo apt purge libreoffice*			<span class="comment">//清理libreoffice配置文件</span></span><br><span class="line">sudo apt autoremove					<span class="comment">//清理libreoffice配置文件</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装思源宋体等好看的字体</li>
+<li>UI透明化，配置终端(这个很重要)等。</li>
+<li>安装Steam，开始白给。</li>
+<li>安装一个好看的主题。</li>
+<li>安装网易云音乐等。</li>
+</ul>
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+	
+	
+		<div>
+			<div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- 本文结束 </span>
+      <i class="fa fa-paw"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+  
+</div>
+		</div>
+	
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Bess Croft wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎订阅本博客！</div>
+</div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Bess Croft 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="Bess Croft 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Bess Croft</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://www.zhuimeng.online/ubuntu.html" title="Ubuntu安装记录">http://www.zhuimeng.online/ubuntu.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/hpomen3hackintosh.html" rel="prev" title="HP暗影精灵3黑苹果基本完工">
+                <i class="fa fa-chevron-left"></i> HP暗影精灵3黑苹果基本完工
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/fonts.html" rel="next" title="更换为Google Fonts思源宋体！">
+                更换为Google Fonts思源宋体！ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+				<a href="/">
+				  <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="Bess Croft">
+				</a>	
+            
+              <p class="site-author-name" itemprop="name">Bess Croft</p>
+              <div class="site-description motion-element" itemprop="description">肥宅程序员</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/bessyjl" title="GitHub &rarr; https://github.com/bessyjl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:631908942@qq.com" title="E-Mail &rarr; mailto:631908942@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/KingDragonYJL" title="Twitter &rarr; https://twitter.com/KingDragonYJL" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" title="YouTube &rarr; https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                友♂链
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhuimeng.online/about/" title="http://www.zhuimeng.online/about/">关于此博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://inspurer.github.io/" title="https://inspurer.github.io/" rel="noopener" target="_blank">月小水长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.heanny.cn/" title="http://www.heanny.cn/" rel="noopener" target="_blank">Heanny Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://yremp.live" title="https://yremp.live" rel="noopener" target="_blank">yremp</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://werty.cn" title="http://werty.cn" rel="noopener" target="_blank">菩提树下改BUG的博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://i.kurumi.ink" title="https://i.kurumi.ink" rel="noopener" target="_blank">番茄酱の小屋</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/01/2019 20:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#浅谈"><span class="nav-number">1.</span> <span class="nav-text">浅谈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#电脑配置"><span class="nav-number">2.1.</span> <span class="nav-text">电脑配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#制作镜像"><span class="nav-number">2.2.</span> <span class="nav-text">制作镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统安装"><span class="nav-number">2.3.</span> <span class="nav-text">系统安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BIOS设置"><span class="nav-number">2.3.1.</span> <span class="nav-text">BIOS设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#禁用N卡"><span class="nav-number">2.3.2.</span> <span class="nav-text">禁用N卡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装选项"><span class="nav-number">2.3.3.</span> <span class="nav-text">安装选项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分区挂载"><span class="nav-number">2.3.4.</span> <span class="nav-text">分区挂载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重点来了"><span class="nav-number">2.3.5.</span> <span class="nav-text">重点来了</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装之后"><span class="nav-number">3.</span> <span class="nav-text">安装之后</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更换镜像源"><span class="nav-number">3.1.</span> <span class="nav-text">更换镜像源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装nVidia驱动"><span class="nav-number">3.2.</span> <span class="nav-text">安装nVidia驱动</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自动安装"><span class="nav-number">3.2.1.</span> <span class="nav-text">自动安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其它方案"><span class="nav-number">3.2.2.</span> <span class="nav-text">其它方案</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置优化"><span class="nav-number">4.</span> <span class="nav-text">配置优化</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-globe"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bess Croft</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">79k</span>
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.2"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '42d480d1648ea350fe6a',
+    clientSecret: '5a1c0a8a459310932e700f13e2be37ed6333e01b',
+    repo: 'gitalk_bess',
+    owner: 'bessyjl',
+    admin: ['bessyjl'],
+    id: md5(location.pathname),
+    
+      language: 'zh-CN',
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 18371,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>
+
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+</html>
+
+
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+
+        
+          $('#sidebar').wobbleWindow({
+            radius: 50,
+            movementLeft: false,
+            movementTop: false,
+            movementBottom: false,
+            position: 'fixed',
+            debug: false,
+          });
+        
+
+        
+      });
+    }
+  </script>
+
+
+
+
+<canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+
+
+  <script async src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  //只在桌面版网页启用特效
+  var windowWidth = $(window).width();
+  if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+  }
+  </script>
+
+

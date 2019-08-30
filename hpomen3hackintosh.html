@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3374244110362851",
+          enable_page_level_ads: true
+     });
+</script>
+  <meta name="description" content="闲暇之余，又一次给暗影精灵3，装上了黑苹果(MacOS 10.14.5)。实现完美电源管理，以及不插电开机(暗影精灵系列的朋友，装过黑苹果的应该知道意味着什么)。并将efi以及补丁发布出来，以便相同的笔记本可以安装。">
+<meta name="keywords" content="黑苹果,暗影精灵3,HP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HP暗影精灵3黑苹果基本完工">
+<meta property="og:url" content="http://www.zhuimeng.online/hpomen3hackintosh.html">
+<meta property="og:site_name" content="Bess&#39;s Blog">
+<meta property="og:description" content="闲暇之余，又一次给暗影精灵3，装上了黑苹果(MacOS 10.14.5)。实现完美电源管理，以及不插电开机(暗影精灵系列的朋友，装过黑苹果的应该知道意味着什么)。并将efi以及补丁发布出来，以便相同的笔记本可以安装。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://www.zhuimeng.online/hpomen3hackintosh/IMG_20190716_095724.jpg">
+<meta property="og:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
+<meta property="og:updated_time" content="2019-07-23T08:47:53.019Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HP暗影精灵3黑苹果基本完工">
+<meta name="twitter:description" content="闲暇之余，又一次给暗影精灵3，装上了黑苹果(MacOS 10.14.5)。实现完美电源管理，以及不插电开机(暗影精灵系列的朋友，装过黑苹果的应该知道意味着什么)。并将efi以及补丁发布出来，以便相同的笔记本可以安装。">
+<meta name="twitter:image" content="http://www.zhuimeng.online/hpomen3hackintosh/IMG_20190716_095724.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Bess's Blog" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://www.zhuimeng.online/hpomen3hackintosh">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>HP暗影精灵3黑苹果基本完工 | Bess's Blog</title>
+  
+
+
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144463982-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-144463982-1');
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Bess's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">www.zhuimeng.online</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-links">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/links/" rel="section"><i class="menu-item-icon fa fa-fw fa-link"></i> <br>友链</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-books">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/books/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>读书</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-movies">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/movies/" rel="section"><i class="menu-item-icon fa fa-fw fa-video-camera"></i> <br>电影</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-games">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/games/" rel="section"><i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>游戏</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <a href="https://github.com/bessyjl" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.zhuimeng.online/hpomen3hackintosh.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bess Croft">
+      <meta itemprop="description" content="肥宅程序员">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bess's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HP暗影精灵3黑苹果基本完工
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-17 17:42:47" itemprop="dateCreated datePublished" datetime="2019-07-17T17:42:47+08:00">2019-07-17</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.3k</span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3374244110362851" data-ad-slot="4231984431"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+        <p>闲暇之余，又一次给暗影精灵3，装上了黑苹果(MacOS 10.14.5)。实现完美电源管理，以及不插电开机(暗影精灵系列的朋友，装过黑苹果的应该知道意味着什么)。并将efi以及补丁发布出来，以便相同的笔记本可以安装。</p>
+<a id="more"></a>
+
+<p><img src="/hpomen3hackintosh/IMG_20190716_095724.jpg" alt></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><table>
+<thead>
+<tr>
+<th>产品名称暗影精灵3</th>
+<th>OMEN by HP Laptop 15-ce0xx</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BIOS</td>
+<td>F.19-04/18/2019</td>
+</tr>
+<tr>
+<td>处理器</td>
+<td>Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz</td>
+</tr>
+<tr>
+<td>独立显卡</td>
+<td>NVIDIA GeForce GTX 1050</td>
+</tr>
+<tr>
+<td>显卡</td>
+<td>Intel(R) HD Graphics 630</td>
+</tr>
+<tr>
+<td>声卡</td>
+<td>ALC295</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>HP SSD EX950 512G、HGST 1T</td>
+</tr>
+</tbody></table>
+<h3 id="已经OJBK的，和一些说明"><a href="#已经OJBK的，和一些说明" class="headerlink" title="已经OJBK的，和一些说明"></a>已经OJBK的，和一些说明</h3><ul>
+<li>声卡驱动正常，没发现破音</li>
+<li>配置页面显示正常</li>
+<li>所有功能正常使用，无报错，包括APP Store、<del>Facetime</del>、iTunes等</li>
+<li>触摸板、电池均正常</li>
+<li>休眠正常</li>
+<li><del>蓝牙没用过，不知道。。。</del></li>
+<li>机器上<del>所有接口</del>均正常，除了type-c接口没试过，我没有配件用的上这个接口</li>
+<li>有线网卡正常，无线网卡无解</li>
+<li>原生电源驱动正常，电池显示打了补丁</li>
+<li>完美实现不插电开机(暗影精灵最难解决的就是这个！)</li>
+<li>USB限制，不知道是解除了还是压根就没有，<a href="http://bbs.pcbeta.com/viewthread-1804129-1-1.html" target="_blank" rel="noopener">远景有篇帖子可以看看</a></li>
+<li>等等，不一一列举了！</li>
+</ul>
+<h3 id="无效功能"><a href="#无效功能" class="headerlink" title="无效功能"></a>无效功能</h3><ul>
+<li><del>小太阳(亮度调节)正常，打了补丁</del>,在10.13.6可以调节，在10.14.5需要单独重新弄。</li>
+<li>FaceTime在10.13.6及一下，都能激活使用，并和我的同学的iphone通话，但10.14.5不行，我还在查找原因！</li>
+<li>蓝牙需要单独激活(反正我几乎是没用过笔记本电脑的蓝牙，所以我想偷懒！)</li>
+<li>type-c应该是用不了。</li>
+<li>由于总所周知的原因，无线网卡无法驱动，只能靠USB网卡、有线网络或者换一个网卡来解决，如:Broadcom BCM94352z</li>
+<li>键盘暂时无法调节亮度，等啥时候有空再去管它吧！</li>
+<li>独显是没法驱动滴，这个大家都知道！</li>
+<li>由于独显没法驱动，所以HDMI无法使用！应该有其它解决方案的。</li>
+<li>其它问题暂时没发现，或者没注意到，毕竟每个人的使用程度不一样，我的要求就是能简单的娱乐办公就行了！</li>
+</ul>
+<h3 id="一些参考教程"><a href="#一些参考教程" class="headerlink" title="一些参考教程"></a>一些参考教程</h3><p><a href="http://www.zhuimeng.online/clover.html">黑苹果教程</a></p>
+<p><a href="https://mp.weixin.qq.com/s/oPAwyR9WafBcg0N-raPWYw" target="_blank" rel="noopener">HP暗影精灵3安装 macOS 10.14.3 Mojave 记录</a></p>
+<p><a href="https://mp.weixin.qq.com/s/st7feN-yHfDcvCEngvbIEw" target="_blank" rel="noopener">macOS Mojave黑苹果教程！</a></p>
+<p><a href="https://blog.daliansky.net/macOS-Mojave-10.14.5-18F132-official-version-with-Clover-4928-original-image.html" target="_blank" rel="noopener">【黑果小兵】macOS Mojave 10.14.5 18F132 正式版 with Clover 4928原版镜像</a></p>
+<p>远景论坛<a href="http://bbs.pcbeta.com/viewthread-1778499-1-1.html" target="_blank" rel="noopener">修改dsdt实现电量显示方法（整理修改已有帖子）</a></p>
+<p>tonymacx86<a href="https://www.tonymacx86.com/threads/solved-hp-omen-15-dc-battery-error.263814/#post-1841023" target="_blank" rel="noopener">HP OMEN 15-dc电池错误</a></p>
+<p><a href="https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/" target="_blank" rel="noopener">[指南]如何修补DSDT的工作电池状态</a></p>
+<h3 id="安装完之后可以干些什么？"><a href="#安装完之后可以干些什么？" class="headerlink" title="安装完之后可以干些什么？"></a>安装完之后可以干些什么？</h3><p>远景论坛<a href="http://bbs.pcbeta.com/viewthread-1798846-1-1.html" target="_blank" rel="noopener">黑苹果洗白成功分享</a></p>
+<p><a href="https://github.com/drduh/macOS-Security-and-Privacy-Guide" target="_blank" rel="noopener"><strong>macOS- 安全和隐私指南</strong></a></p>
+<p><a href="https://www.vultr.com/?ref=8102856-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a></p>
+<h3 id="下载链接-镜像同步上传中"><a href="#下载链接-镜像同步上传中" class="headerlink" title="下载链接 镜像同步上传中"></a>下载链接 镜像同步上传中</h3><p>👍<strong>镜像来自于@黑果小兵的博客找的链接，我自己用的也是这个镜像！</strong></p>
+<p>迅雷离线下载：[[请点击下载](<a href="https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS" target="_blank" rel="noopener">https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS</a> Mojave 10.14.5(18F132) Installer with Clover 4928.dmg)] 感谢<code>@难忘情怀</code>提供下载资源</p>
+<p>http下载链接:<a href="https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/" target="_blank" rel="noopener">请点击下载</a> 感谢<code>@难忘情怀</code>提供下载资源</p>
+<p>百毒云：链接: <a href="https://pan.baidu.com/s/1AKuzJXJe7haNYWo00YwJlQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1AKuzJXJe7haNYWo00YwJlQ</a> 提取码: ivmi</p>
+<p>MD5 (macOS Mojave 10.14.5(18F132) Installer with Clover 4928.dmg) = 371d9145484beaf0795d6b7d0d569fc3</p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><ul>
+<li>感谢 <a href="https://github.com/acidanthera" target="_blank" rel="noopener">Acidanthera</a> 提供 <a href="https://github.com/acidanthera/AppleALC" target="_blank" rel="noopener">AppleALC</a>，<a href="https://github.com/acidanthera/HibernationFixup" target="_blank" rel="noopener">HibernationFixup</a>，<a href="https://github.com/acidanthera/Lilu" target="_blank" rel="noopener">Lilu</a>，<a href="https://github.com/acidanthera/OpenCorePkg" target="_blank" rel="noopener">OpenCorePkg</a>，<a href="https://github.com/acidanthera/VirtualSMC" target="_blank" rel="noopener">VirtualSMC</a>，<a href="https://github.com/acidanthera/VoodooPS2" target="_blank" rel="noopener">VoodooPS2</a> 和 <a href="https://github.com/acidanthera/WhateverGreen" target="_blank" rel="noopener">WhateverGreen</a>。</li>
+<li>感谢 <a href="https://github.com/alexandred" target="_blank" rel="noopener">alexandred</a> 提供 <a href="https://github.com/alexandred/VoodooI2C" target="_blank" rel="noopener">VoodooI2C</a>。</li>
+<li>感谢 <a href="https://sourceforge.net/u/apianti" target="_blank" rel="noopener">apianti</a>，<a href="https://sourceforge.net/u/blackosx" target="_blank" rel="noopener">blackosx</a>，<a href="https://sourceforge.net/u/blusseau" target="_blank" rel="noopener">blusseau</a>，<a href="https://sourceforge.net/u/dmazar" target="_blank" rel="noopener">dmazar</a> 和 <a href="https://sourceforge.net/u/slice2009" target="_blank" rel="noopener">slice2009</a> 提供 <a href="https://sourceforge.net/projects/cloverefiboot" target="_blank" rel="noopener">Clover</a>。</li>
+<li>感谢 <a href="https://github.com/RehabMan" target="_blank" rel="noopener">RehabMan</a> 提供 <a href="https://github.com/RehabMan/EAPD-Codec-Commander" target="_blank" rel="noopener">EAPD-Codec-Commander</a>，<a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">OS-X-Clover-Laptop-Config</a>，<a href="https://github.com/RehabMan/OS-X-Null-Ethernet" target="_blank" rel="noopener">OS-X-Null-Ethernet</a>，<a href="https://github.com/RehabMan/OS-X-USB-Inject-All" target="_blank" rel="noopener">OS-X-USB-Inject-All</a> 和 <a href="https://github.com/RehabMan/hack-tools/tree/master/kexts/SATA-unsupported.kext" target="_blank" rel="noopener">SATA-unsupported</a>。</li>
+<li>感谢远景论坛的各位大佬提供的教程，以及<a href="https://github.com/daliansky" target="_blank" rel="noopener">黑果小兵</a>的镜像。</li>
+</ul>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><p><strong>Q:如何进入BIOS或者设置启动项？</strong></p>
+<p>A:开机后按下ESC键，然后根据指引选择</p>
+<p><strong>Q:是否需要登录apple账号呢？</strong></p>
+<p>A:建议使用小号来登录，否则可能被apple拉黑！</p>
+<p><strong>Q:为什么在你的电脑上可以，而我的电脑上不行呢？</strong></p>
+<p>A:我也不知道，您可以尝试问一下你的电脑:为什么你不行？</p>
+<p><strong>Q:为什么这么费电？</strong></p>
+<p>A:Google搜索:如何禁用独立显卡以节省电量</p>
+<p><strong>Q:为什么没有HiDPI？</strong></p>
+<p>A:我并不能解决所有的问题，如果您能向我提供帮助，那么太感激您了！</p>
+<h3 id="🔊扬声器无法使用的解决方案"><a href="#🔊扬声器无法使用的解决方案" class="headerlink" title="🔊扬声器无法使用的解决方案"></a>🔊扬声器无法使用的解决方案</h3><p>暗影精灵3的声卡是ALC295，找到我在repo中提供的<code>VoodooHDA-295.pkg</code>，并安装它。我很懒，只提供了这一种方案，如果您有更好的方案，欢迎分享！</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>是的，没错，为了水一篇文章而已，不要在意这些细节！</p>
+<p>👉GitHub:<strong><a href="https://github.com/bessyjl/HP-OMEN-3-Hackintosh" target="_blank" rel="noopener">HP-OMEN-3-Hackintosh</a></strong></p>
+
+      
+    </div>
+
+    
+      
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="\clover.html" rel="bookmark">黑苹果教程</a></div>
+      
+    </li>
+  
+  </ul>
+
+
+    
+
+    
+    
+    
+	
+	
+		<div>
+			<div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- 本文结束 </span>
+      <i class="fa fa-paw"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+  
+</div>
+		</div>
+	
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Bess Croft wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎订阅本博客！</div>
+</div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Bess Croft 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="Bess Croft 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Bess Croft</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://www.zhuimeng.online/hpomen3hackintosh.html" title="HP暗影精灵3黑苹果基本完工">http://www.zhuimeng.online/hpomen3hackintosh.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/黑苹果/" rel="tag"><i class="fa fa-tag"></i> 黑苹果</a>
+          
+            <a href="/tags/暗影精灵3/" rel="tag"><i class="fa fa-tag"></i> 暗影精灵3</a>
+          
+            <a href="/tags/HP/" rel="tag"><i class="fa fa-tag"></i> HP</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/win10kill.html" rel="prev" title="彻底关闭Windows10系统更新！">
+                <i class="fa fa-chevron-left"></i> 彻底关闭Windows10系统更新！
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ubuntu.html" rel="next" title="Ubuntu安装记录">
+                Ubuntu安装记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+				<a href="/">
+				  <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="Bess Croft">
+				</a>	
+            
+              <p class="site-author-name" itemprop="name">Bess Croft</p>
+              <div class="site-description motion-element" itemprop="description">肥宅程序员</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/bessyjl" title="GitHub &rarr; https://github.com/bessyjl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:631908942@qq.com" title="E-Mail &rarr; mailto:631908942@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/KingDragonYJL" title="Twitter &rarr; https://twitter.com/KingDragonYJL" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" title="YouTube &rarr; https://www.youtube.com/channel/UCSGlMGvPD6t0sga3eNH2Tjw" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                友♂链
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhuimeng.online/about/" title="http://www.zhuimeng.online/about/">关于此博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://inspurer.github.io/" title="https://inspurer.github.io/" rel="noopener" target="_blank">月小水长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.heanny.cn/" title="http://www.heanny.cn/" rel="noopener" target="_blank">Heanny Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://yremp.live" title="https://yremp.live" rel="noopener" target="_blank">yremp</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://werty.cn" title="http://werty.cn" rel="noopener" target="_blank">菩提树下改BUG的博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://i.kurumi.ink" title="https://i.kurumi.ink" rel="noopener" target="_blank">番茄酱の小屋</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("05/01/2019 20:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#已经OJBK的，和一些说明"><span class="nav-number">2.</span> <span class="nav-text">已经OJBK的，和一些说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无效功能"><span class="nav-number">3.</span> <span class="nav-text">无效功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些参考教程"><span class="nav-number">4.</span> <span class="nav-text">一些参考教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装完之后可以干些什么？"><span class="nav-number">5.</span> <span class="nav-text">安装完之后可以干些什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载链接-镜像同步上传中"><span class="nav-number">6.</span> <span class="nav-text">下载链接 镜像同步上传中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number">7.</span> <span class="nav-text">致谢</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见问题"><span class="nav-number">8.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#🔊扬声器无法使用的解决方案"><span class="nav-number">9.</span> <span class="nav-text">🔊扬声器无法使用的解决方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后"><span class="nav-number">10.</span> <span class="nav-text">最后</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-globe"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bess Croft</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">79k</span>
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.2"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '42d480d1648ea350fe6a',
+    clientSecret: '5a1c0a8a459310932e700f13e2be37ed6333e01b',
+    repo: 'gitalk_bess',
+    owner: 'bessyjl',
+    admin: ['bessyjl'],
+    id: md5(location.pathname),
+    
+      language: 'zh-CN',
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 18371,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>
+
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+</html>
+
+
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+
+        
+          $('#sidebar').wobbleWindow({
+            radius: 50,
+            movementLeft: false,
+            movementTop: false,
+            movementBottom: false,
+            position: 'fixed',
+            debug: false,
+          });
+        
+
+        
+      });
+    }
+  </script>
+
+
+
+
+<canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+
+
+  <script async src="//code.tidio.co/ooy0sel3mgcojgqg8pgqtafsc3i9jtjd.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  //只在桌面版网页启用特效
+  var windowWidth = $(window).width();
+  if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+  }
+  </script>
+
+
