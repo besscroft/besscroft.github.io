@@ -1785,6 +1785,501 @@ show_date_time();
 
 
   
+  
+  
+  
+  
+    <div id="links">
+        <style>
+            .links-content{
+                margin-top:1rem;
+            }
+            
+            .link-navigation::after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            
+            .card {
+                width: 300px;
+                font-size: 1rem;
+                padding: 10px 20px;
+                border-radius: 4px;
+                transition-duration: 0.15s;
+                margin-bottom: 1rem;
+                display:flex;
+            }
+            .card:nth-child(odd) {
+                float: left;
+            }
+            .card:nth-child(even) {
+                float: right;
+            }
+            .card:hover {
+                transform: scale(1.1);
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+            }
+            .card a {
+                border:none; 
+            }
+            .card .ava {
+                width: 3rem!important;
+                height: 3rem!important;
+                margin:0!important;
+                margin-right: 1em!important;
+                border-radius:4px;
+                
+            }
+            .card .card-header {
+                font-style: italic;
+                overflow: hidden;
+                width: 236px;
+            }
+            .card .card-header a {
+                font-style: normal;
+                color: #2bbc8a;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .card .card-header a:hover {
+                color: #d480aa;
+                text-decoration: none;
+            }
+            .card .card-header .info {
+                font-style:normal;
+                color:#a3a3a3;
+                font-size:14px;
+                min-width: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        </style>
+        <div class="links-content">
+            <div class="link-navigation">
+
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://inspurer.github.io/images/avatar.jpg">
+                        <div class="card-header">
+                        <div><a href="https://inspurer.github.io/" target="_blank">@ 月小水长</a></div>
+                        <div class="info">饮冰室主人</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="http://www.heanny.cn/update/Photo/1812191426541545200814573620.jpg">
+                        <div class="card-header">
+                        <div><a href="http://www.heanny.cn/" target="_blank">@ Heanny Liu</a></div>
+                        <div class="info">我不是你的肖奈</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg">
+                        <div class="card-header">
+                        <div><a href="https://yremp.live/" target="_blank">@ Yremp</a></div>
+                        <div class="info">流年，谁给过的倾城</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://img.icons8.com/color/2x/ninja-head.png">
+                        <div class="card-header">
+                        <div><a href="http://werty.cn/" target="_blank">@ 猿宵</a></div>
+                        <div class="info">菩提树下改BUG的博客</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://i.kurumi.ink/img/logo.png">
+                        <div class="card-header">
+                        <div><a href="https://i.kurumi.ink/" target="_blank">@ 番茄酱の萌化小屋</a></div>
+                        <div class="info">略宅</div>
+                        </div>
+                    </div>
+                
+                
+
+            </div>
+            <blockquote>
+    <p>最佳的娱乐方式</p>
+</blockquote>
+
+<style>
+    
+.hexo-douban-tabs {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.hexo-douban-tab {
+    padding: 5px;
+}
+
+.hexo-douban-active {
+    background: #657b83;
+    color: #fff;
+}
+
+.hexo-douban-item {
+    padding-bottom: 10px;
+    position: relative;
+    clear: both;
+    min-height: 170px;
+    padding: 10px 0;
+    border-bottom: 1px #ddd solid;
+}
+
+@media screen and (max-width: 600px) {
+    .hexo-douban-item {
+        width: 100%;
+    }
+}
+
+.hexo-douban-picture {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100px;
+}
+
+.hexo-douban-info {
+    padding-left: 120px;
+}
+
+.hexo-douban-meta {
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.hexo-douban-comments {
+    font-size: 12px;
+}
+
+.hexo-douban-pagination {
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hexo-douban-button {
+    padding: 5px;
+}
+
+.hexo-douban-button:hover {
+    background: #657b83;
+    color: #fff;
+}
+
+.hexo-douban-hide {
+    display: none;
+}
+
+.hexo-douban-show {
+    display: block;
+}
+
+
+</style>
+
+<div class="hexo-douban-tabs">
+    <a class="hexo-douban-tab" id="hexo-douban-tab1" href="javascript:;" rel="external">
+        在玩
+        (2)</a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab2" href="javascript:;" rel="external">
+        想玩
+        (1)</a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab3" href="javascript:;" rel="external">
+        已玩
+        (6)</a>
+
+</div>
+<div>
+    <div id="hexo-douban-item1">
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img3.doubanio.com/lpic/s25805601.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/21726040/">古墓丽影 Tomb Raider</a>
+        </div>
+        <div class="hexo-douban-meta">PC / MAC / PS4 / XONE / PS3 / X360 / LIN / 射击 / 冒险 / 动作 / 2013-03-05 </div>
+        <div class="hexo-douban-meta">2019-05-02 /  TombRaider 角色扮演 解谜 动作 冒险 / ★★★★★ 力荐 </div>
+        <div class="hexo-douban-comments"> 主线还没做完，不过依旧是那么的好玩。</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img3.doubanio.com/lpic/s29321584.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/26788812/">战地1 Battlefield 1</a>
+        </div>
+        <div class="hexo-douban-meta">PC / PS4 / XONE / 第一人称射击 / 射击 / 冒险 / 动作 / 2016-10-21 / 2016-10-21 </div>
+        <div class="hexo-douban-meta">2019-04-30 /  一战 战争 第一次世界大战 历史 / ★★★★★ 力荐 </div>
+        <div class="hexo-douban-comments"> 战地系列的巅峰之作了，可能战地5在以后的优化之后会超越它，但是这依旧是一款好游戏，吹爆！</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">上一页</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">下一页</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">尾页</a>
+</div>
+    </div>
+    <div id="hexo-douban-item2">
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img3.doubanio.com/lpic/s33299132.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/25931998/">赛博朋克 2077 Cyberpunk 2077</a>
+        </div>
+        <div class="hexo-douban-meta">PC / PS4 / XONE / 第一人称射击 / 角色扮演 / 动作 / 2020-04-16 / 2020-04-16</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">上一页</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">下一页</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">尾页</a>
+</div>
+    </div>
+    <div id="hexo-douban-item3">
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/lpic/s27991949.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/26589438/">未连接到互联网 Unable to connect to the Internet</a>
+        </div>
+        <div class="hexo-douban-meta">2019-05-02 /  有趣的彩蛋 浏览器 / ★★★★★ 力荐 </div>
+        <div class="hexo-douban-comments"> 竟然在豆瓣还能找到这款游戏！！！</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img3.doubanio.com/lpic/s29688663.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/10734157/">我的世界 Minecraft</a>
+        </div>
+        <div class="hexo-douban-meta">2019-05-02 /  沙盒 像素 独立游戏 / ★★★★★ 力荐 </div>
+        <div class="hexo-douban-comments"> 这游戏和朋友一起玩才能找到快乐！</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/lpic/s29786649.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/30241370/">Wallpaper Engine</a>
+        </div>
+        <div class="hexo-douban-meta">2019-05-02 /  壁纸 桌面 Steam / ★★★★★ 力荐 </div>
+        <div class="hexo-douban-comments"> 神车，但也会让电脑变卡！</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img3.doubanio.com/lpic/s29296395.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/11504723/">侠盗猎车手5 Grand Theft Auto V</a>
+        </div>
+        <div class="hexo-douban-meta">2019-05-02 /  沙盒 神作 经典 GTA / ★★★★★ 力荐 </div>
+        <div class="hexo-douban-comments"> 滴滴！！！</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img3.doubanio.com/lpic/s28081091.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/21355730/">巫师3：狂猎 The Witcher 3: Wild Hunt</a>
+        </div>
+        <div class="hexo-douban-meta">2019-05-02 /  波兰人就是莽 角色扮演 神作 /  </div>
+        <div class="hexo-douban-comments"> 打牌3：狂赌？？？</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img3.doubanio.com/lpic/s29757832.jpg" referrerpolicy="no-referrer"></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title">
+            <a target="_blank" href="https://www.douban.com/game/26410433/">古墓丽影：崛起 Rise of the Tomb Raider</a>
+        </div>
+        <div class="hexo-douban-meta">2019-05-02 /  Tomb-Raider 第三人称 冒险 动作 解谜 生存 / ★★★★★ 力荐 </div>
+        <div class="hexo-douban-comments"> 和劳拉小姐一起探险玩的最开心的一部！</div>
+    </div>
+</div>
+
+
+        
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">上一页</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">下一页</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">尾页</a>
+</div>
+    </div>
+
+</div>
+
+<script>
+    /**
+ * Created by myths on 18-2-8.
+ */
+
+Element.prototype.siblings = function () {
+    var siblingElement = [];
+    var sibs = this.parentNode.children;
+    for (var i = 0; i < sibs.length; i++) {
+        if (sibs[i] !== this) {
+            siblingElement.push(sibs[i]);
+        }
+    }
+    return siblingElement;
+};
+function tabClick() {
+    //修改标签样式
+    this.classList.add('hexo-douban-active');
+    var sibs = this.siblings();
+    for (var j = 0; j < sibs.length; j++) {
+        sibs[j].classList.remove('hexo-douban-active');
+    }
+    //显示对应板块
+    var itemId = this.id.replace('tab', 'item');
+    var target = document.getElementById(itemId);
+    target.classList.remove('hexo-douban-hide');
+    target.classList.add('hexo-douban-show');
+    sibs = document.getElementById(itemId).siblings();
+    for (var k = 0; k < sibs.length; k++) {
+        sibs[k].classList.remove('hexo-douban-show');
+        sibs[k].classList.add('hexo-douban-hide');
+    }
+}
+var tabs = document.getElementsByClassName("hexo-douban-tab");
+for (var i = 0; i < tabs.length; i++) {
+    tabs[i].onclick = tabClick;
+    tabs[i].onclick.apply(tabs[i]);
+}
+tabs[2].click();
+
+    var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
+var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
+var nextpages = document.getElementsByClassName("hexo-douban-nextpage");
+var lastpages = document.getElementsByClassName("hexo-douban-lastpage");
+var pagenums = document.getElementsByClassName("hexo-douban-pagenum");
+
+function makePageNum(num, arr) {
+    return (num + 1) + ' / ' + (Math.ceil(arr.length / 10 === 0 ? 1 : Math.ceil(arr.length / 10)));
+}
+
+function firstBtn() {
+    var sibs = this.parentNode.siblings();
+    displayPage(sibs, 0);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(0, sibs);
+}
+
+function previousBtn() {
+    var sibs = this.parentNode.siblings();
+    var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
+    currNum = currNum.substr(0, currNum.indexOf('/') - 1);
+    currNum = parseInt(currNum, 10) - 1;
+    if (currNum > 0) {
+        currNum--;
+    }
+    displayPage(sibs, currNum);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs);
+}
+
+function nextBtn() {
+    var sibs = this.parentNode.siblings();
+    var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
+    currNum = currNum.substr(0, currNum.indexOf('/') - 1);
+    currNum = parseInt(currNum, 10) - 1;
+    if (currNum < Math.ceil(sibs.length / 10) - 1) {
+        currNum++;
+    }
+    displayPage(sibs, currNum);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs);
+}
+
+function lastBtn() {
+    var sibs = this.parentNode.siblings();
+    displayPage(sibs, Math.ceil(sibs.length / 10) - 1);
+    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 10) - 1 === -1 ? 0 : Math.ceil(sibs.length / 10) - 1, sibs);
+}
+
+function displayPage(arr, num) {
+    for (var i = 0; i < arr.length; i++) {
+        if (Math.floor(i / 10) === num) {
+            arr[i].classList.remove('hexo-douban-hide');
+            var img = arr[i].getElementsByTagName('img')[0];
+            img.src = img.getAttribute('data-src');
+        } else {
+            arr[i].classList.add('hexo-douban-hide');
+        }
+    }
+}
+
+for (var i = 0; i < firstpages.length; i++) {
+
+    //add listener
+    firstpages[i].onclick = firstBtn;
+    previouspages[i].onclick = previousBtn;
+    nextpages[i].onclick = nextBtn;
+    lastpages[i].onclick = lastBtn;
+
+    //set page num
+    var size = pagenums[i].parentNode.siblings().length;
+    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 10) === 0 ? 1 : Math.ceil(size / 10));
+    firstpages[i].click();
+}
+
+</script>
+
+
+            </div>
+        </div>
+  
+  
+  
+  
+
+  
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
 </html>
 

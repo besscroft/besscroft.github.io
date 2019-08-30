@@ -1842,6 +1842,264 @@ show_date_time();
 
 
   
+  
+  
+  
+  
+    <div id="links">
+        <style>
+            .links-content{
+                margin-top:1rem;
+            }
+            
+            .link-navigation::after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            
+            .card {
+                width: 300px;
+                font-size: 1rem;
+                padding: 10px 20px;
+                border-radius: 4px;
+                transition-duration: 0.15s;
+                margin-bottom: 1rem;
+                display:flex;
+            }
+            .card:nth-child(odd) {
+                float: left;
+            }
+            .card:nth-child(even) {
+                float: right;
+            }
+            .card:hover {
+                transform: scale(1.1);
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+            }
+            .card a {
+                border:none; 
+            }
+            .card .ava {
+                width: 3rem!important;
+                height: 3rem!important;
+                margin:0!important;
+                margin-right: 1em!important;
+                border-radius:4px;
+                
+            }
+            .card .card-header {
+                font-style: italic;
+                overflow: hidden;
+                width: 236px;
+            }
+            .card .card-header a {
+                font-style: normal;
+                color: #2bbc8a;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .card .card-header a:hover {
+                color: #d480aa;
+                text-decoration: none;
+            }
+            .card .card-header .info {
+                font-style:normal;
+                color:#a3a3a3;
+                font-size:14px;
+                min-width: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        </style>
+        <div class="links-content">
+            <div class="link-navigation">
+
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://inspurer.github.io/images/avatar.jpg">
+                        <div class="card-header">
+                        <div><a href="https://inspurer.github.io/" target="_blank">@ 月小水长</a></div>
+                        <div class="info">饮冰室主人</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="http://www.heanny.cn/update/Photo/1812191426541545200814573620.jpg">
+                        <div class="card-header">
+                        <div><a href="http://www.heanny.cn/" target="_blank">@ Heanny Liu</a></div>
+                        <div class="info">我不是你的肖奈</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg">
+                        <div class="card-header">
+                        <div><a href="https://yremp.live/" target="_blank">@ Yremp</a></div>
+                        <div class="info">流年，谁给过的倾城</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://img.icons8.com/color/2x/ninja-head.png">
+                        <div class="card-header">
+                        <div><a href="http://werty.cn/" target="_blank">@ 猿宵</a></div>
+                        <div class="info">菩提树下改BUG的博客</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://i.kurumi.ink/img/logo.png">
+                        <div class="card-header">
+                        <div><a href="https://i.kurumi.ink/" target="_blank">@ 番茄酱の萌化小屋</a></div>
+                        <div class="info">略宅</div>
+                        </div>
+                    </div>
+                
+                
+
+            </div>
+            <p>一直以来，都是在虚拟机里面使用Linux系统，但随着使用需求的增加，于是直接在笔记本中安装Ubuntu。基本上就是Windows 10 + Ubuntu18.04LTS双系统共存模式！</p>
+<h2 id="浅谈"><a href="#浅谈" class="headerlink" title="浅谈"></a>浅谈</h2><p>很多同学在虚拟机中安装Linux(实际上不仅限于Ubuntu)，都会觉得安装很简单，基本上就是一直点下一步之类的，当然了，ArchLinux之流除外哈。不是说ArchLinux不好用(我觉得过渡动画还比较流畅，速度也很快)，而是它的安装过程，感觉就是个过滤用户的阴谋😂</p>
+<p>既然要直接在笔记本上安装，那么，肯定会有不少坑的，而且还是双系统共存。最常见的就是分区和假死了吧(卡死在某一界面)。其它的诸如制作镜像，装驱动出现问题，点击现在重启卡死等。我在刚买我的暗影精灵3的时候，就尝试过双系统，然后，你懂的。我直接就留下了心里阴影，因为那时候没做备份，后来我备份的好习惯就是这么被逼出来的🙃</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="电脑配置"><a href="#电脑配置" class="headerlink" title="电脑配置"></a>电脑配置</h3><p>先介绍下我的电脑配置吧。</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">产品名称 : <span class="type">OMEN</span> by HP Laptop <span class="number">15</span>-ce0xx</span><br><span class="line">BIOS : <span class="type">F.18</span>-<span class="number">11</span>/<span class="number">09</span>/<span class="number">2018</span></span><br><span class="line">内存总量 : 16 <span class="type">GB</span></span><br><span class="line">处理器名称 : <span class="type">Intel</span>(R) Core(TM) i7-<span class="number">7700</span>HQ CPU @ <span class="number">2.80</span>GHz</span><br><span class="line">BIOS模式 : <span class="type">UEFI</span></span><br><span class="line">当前系统 : <span class="type">Windows</span> <span class="number">10</span> 家庭中文版 <span class="number">1903</span> 版本<span class="number">18632</span></span><br><span class="line">显卡 : <span class="type">NVIDIA</span> GeForce GTX <span class="number">1050</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.vultr.com/?ref=8102856-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a></p>
+<h3 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h3><p>在哪里下，应该就不用我废话了，我个人更喜欢👍<a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener">清华大学开源软件镜像站</a>，大家没下载的可以在这里下。如果是要像我一样，想当作主力系统来用的，就下Ubuntu 18.04.02LTS版本，LTS是官方长期维护的版本，更稳定，一直维护到2023年4月。如果你跟我一样，喜欢最新的事务，那么，Ubuntu 19.04是你不错的选择，自带的UI变漂亮了许多，但遗憾的是，它的支持生命周期只到2020年1月😥</p>
+<p>镜像制作工具，推荐<a href="http://rufus.ie/" target="_blank" rel="noopener">Rufus</a>吧，简单制作个镜像而已，必须要花里胡哨的功能，而且差不多就1M大小，免安装！！！</p>
+<p><img src="/ubuntu/ubuntu01.png" alt></p>
+<p>选项基本跟我保持一致即可，尤其是簇大小，大家都习惯默认的，但是部分奇葩的U盘，默认分配单元大小是16K或者32K，可能会导致安装系统过程中，出现一些不必要的问题。</p>
+<p><strong>然后，在Windows下分一个给Ubuntu用的分区出来，确保为为分配状态！！！</strong></p>
+<h3 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h3><h4 id="BIOS设置"><a href="#BIOS设置" class="headerlink" title="BIOS设置"></a>BIOS设置</h4><p>开机进入BIOS，hp暗影精灵是开机按F10，其它品牌请自行Google！</p>
+<p><img src="/ubuntu/ubuntu02.png" alt></p>
+<p><img src="/ubuntu/ubuntu03.png" alt></p>
+<p>如图，你需要将传统模式和安全启动模式(Secure Boot)都设置为禁用，然后把U盘的启动顺序调整到操作系统管理员的前面。如果你不禁用Secure Boot的话，Ubuntu系统将无法运行，不明白为什么的同学，自行Google！</p>
+<h4 id="禁用N卡"><a href="#禁用N卡" class="headerlink" title="禁用N卡"></a>禁用N卡</h4><p>然后重点来了！！！你这时候应该进入引导界面了，但是不要着急！！！把光标移到<code>Install Ubuntu</code>，先别着急敲下回车键。先按下键盘上的字母键E，然后将<code>quiet splash ---</code>更改为 <code>quiet splash nouveau.modeset=0</code>，如图：</p>
+<p><img src="/ubuntu/ubuntu04.png" alt="ubuntu04"></p>
+<p>改为：</p>
+<p><img src="/ubuntu/ubuntu05.png" alt="ubuntu05"></p>
+<p>我在安装时忘记拍照了，这是在虚拟机中截的图，不过影响不大，只是用来参考的。改完之后，按下Ctrl+X或者F10，具体的那个界面下面会有显示的。</p>
+<div class="note warning"><p>为什么要大家这么做呢？因为自己安装过的朋友，遇到过最头疼的问题应该就是安装过程中卡死了，我曾经也遇到过！没错，就是从你开始安装，直到安装完毕进入Ubuntu的桌面为止，随时都有可能卡死。但是在虚拟机中并不会这样，我去Google查了一下，很多解释差不多是这个意思：Ubuntu是开源系统，但是Nvidia并没有将显卡驱动开源，所以Ubuntu内核中自带的Nvidia显卡驱动版本就没有特别新，就导致安装过程中会卡死。所以进行上面的设置后，禁止Ubuntu加载自带的N卡驱动，问题就解决了。玩过黑苹果的朋友门，应该也碰到过相同的问题吧。</p></div>
+
+<h4 id="安装选项"><a href="#安装选项" class="headerlink" title="安装选项"></a>安装选项</h4><p>只强调2件事，如果禁用N卡驱动之后，窗口变大的话，部分窗口被挤出屏幕，导致鼠标点不到按钮，可以按住Alt键然后用鼠标拖动窗口。其次，建议不要选择最小安装，这样以后你使用是，会少部分依赖库，给你造成麻烦(精通Linux的大神当我没说！)😋</p>
+<h4 id="分区挂载"><a href="#分区挂载" class="headerlink" title="分区挂载"></a>分区挂载</h4><p><img src="/ubuntu/ubuntu06.png" alt></p>
+<p>千万不要偷懒，一定要选择其它选项。</p>
+<p><img src="/ubuntu/ubuntu07.png" alt="ubuntu07"></p>
+<p>挂载分区，因为是UEFI启动模式，所以只少要4个分区，以我的为例，我分了100个G给Ubuntu，且我的运行内存为16G。</p>
+<table>
+<thead>
+<tr>
+<th>分区类型</th>
+<th>挂载点</th>
+<th>大小</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>efi</td>
+<td>efi</td>
+<td>2046MB</td>
+<td>用于安装efi</td>
+</tr>
+<tr>
+<td>swap</td>
+<td>swap</td>
+<td>16386MB</td>
+<td>交换分区</td>
+</tr>
+<tr>
+<td>ext4</td>
+<td>/home</td>
+<td>42859MB</td>
+<td>主目录</td>
+</tr>
+<tr>
+<td>ext4</td>
+<td>/</td>
+<td>46080MB</td>
+<td>根目录</td>
+</tr>
+</tbody></table>
+<p>传统的Boot为主分区，UEFI模式就选择逻辑分区，efi分区用来存储引导器，系统的启动文件等。我分配了2G，硬盘不大的400M左右也可以。</p>
+<p>swap分区选择主分区，这个交换分区就相当于是虚拟内存，一般设置为你的内存大小的同等大小，或者内存的2倍。</p>
+<p><code>/home</code>即主目录，也叫用户的宿主目录。用户登录系统后，所处的位置就是/home，通常用来保存用户文件。没错，什么图片啊、视频啊、你下载的东西啊，都是存在这里的，给多少自己看着办吧。</p>
+<p><code>/</code>即根目录，不要给太小，如果一共就四五十个G，至少也得给15G左右。</p>
+<p>最后，在下面的<code>安装启动引导器的设备</code>那里，<strong>选择你刚才分出来的那个efi分区</strong>(划重点，要考)，然后再点击<code>现在安装</code>。然后后面的一堆设置可以按需求设置，然后，慢慢等。</p>
+<h4 id="重点来了"><a href="#重点来了" class="headerlink" title="重点来了"></a>重点来了</h4><p>这一步很重要，因为实际上整个安装过程并没有结束，你还是得提防Ubuntu有没有搞你。在安装完成之后，系统会提示<code>已安装完成，是否重启</code>，这不废话吗，当然得选择<code>现在重启</code>了(逃)。。。😐</p>
+<p>点击重启之后，拔掉U盘，然后<strong>在开机的品牌logo出现后，按一下、按一下、只按一下键盘左上角的ESC键</strong>。开机的时候，都会出现品牌logo的吧？你看到它之后，按一下就行了。为了防止某些同学说他电脑开机不显示品牌logo，那好，你插上鼠标，等重启后屏幕亮了之后(屏幕是黑色时也有亮的情况，别跟我杠这些)，然后看着你的鼠标，鼠标等亮了之后，按一下ESC键。</p>
+<p><img src="/ubuntu/ubuntu08.png" alt="ubuntu08"></p>
+<p><center>(图片来源于互联网，我没拍照，不过都差不多)</center></p>
+
+<p>这时候出现的画面，就是<code>GRUB</code>引导器，键盘选中<code>Ubuntu</code>这一项，然后按下键盘字母<code>E</code>键，是不是觉得刚才做过这步？是的，按下E之后，一样的操作。</p>
+<p>把光标移到<code>Install Ubuntu</code>，先别着急敲下回车键。先按下键盘上的字母键E，然后将<code>quiet splash ---</code>更改为 <code>quiet splash nouveau.modeset=0</code>，如图：</p>
+<p><img src="/ubuntu/ubuntu04.png" alt="ubuntu04"></p>
+<p>改为：(只要让那一串代码变成下图这样，这串代码前面和后面不变，你不用管它是什么)</p>
+<p><img src="/ubuntu/ubuntu05.png" alt="ubuntu05"></p>
+<p>到这里，应该就可以正常地进入系统了。</p>
+<h2 id="安装之后"><a href="#安装之后" class="headerlink" title="安装之后"></a>安装之后</h2><h3 id="更换镜像源"><a href="#更换镜像源" class="headerlink" title="更换镜像源"></a>更换镜像源</h3><p>由于一系列总所周知的原因，我们需要更换镜像源为国内的源，我推荐使用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/" target="_blank" rel="noopener">清华大学的镜像源</a>，其它源也可以用类似的方法添加。</p>
+<p><strong>先备份好习惯！</strong></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /etc/apt/sources<span class="selector-class">.list</span> /etc/apt/sources<span class="selector-class">.list</span><span class="selector-class">.bak</span></span><br></pre></td></tr></table></figure>
+
+<p>打开编辑源列表：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/apt/sources.<span class="built_in">list</span></span><br></pre></td></tr></table></figure>
+
+<p>将文件内所有文件清空，然后将下列清华源全部copy进去：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 默认注释了源码镜像以提高 apt <span class="keyword">update</span> 速度，如有需要可自行取消注释</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line"><span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line"></span><br><span class="line"># 预发布软件源，不建议启用</span><br><span class="line"># <span class="keyword">deb</span> http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line"># <span class="keyword">deb</span>-src http<span class="variable">s:</span>//mirrors.tuna.tsinghua.edu.<span class="keyword">cn</span>/ubuntu/ bionic-proposed main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+
+<p>然后用清华源更新一下：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> update</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> upgrade</span><br></pre></td></tr></table></figure>
+
+<p>如果你不知道这两条命令干嘛的，请自行Google，按理说应该知道的！</p>
+<h3 id="安装nVidia驱动"><a href="#安装nVidia驱动" class="headerlink" title="安装nVidia驱动"></a>安装nVidia驱动</h3><h4 id="自动安装"><a href="#自动安装" class="headerlink" title="自动安装"></a>自动安装</h4><p>推荐使用标准的Ubuntu仓库进行自动化安装，虽然版本不是最新的，但是<strong>更稳定</strong>！！！又不打游戏，用Linux一大原因不就是图个稳定嘛！</p>
+<p>删除现有的系统自带N卡驱动以及相关的所有配置文件等：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> --purge <span class="builtin-name">remove</span> nvidia*</span><br></pre></td></tr></table></figure>
+
+<p>查看显卡设备，并显示系统推荐的驱动版本：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ubuntu-drivers devices</span></span><br></pre></td></tr></table></figure>
+
+<p>安装系统推荐的驱动：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo ubuntu-drivers autoinstall</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="其它方案"><a href="#其它方案" class="headerlink" title="其它方案"></a>其它方案</h4><p>自行Google好嘛，只让你看最稳定的方式，要追求刺激，可以自己去追求，我怕出了问题要来怪我！</p>
+<p>安装完之后，开机就不用再去设置了(重启后生效！)</p>
+<h2 id="配置优化"><a href="#配置优化" class="headerlink" title="配置优化"></a>配置优化</h2><p>到这里基本上就结束了，其它的使用，我可以给一些建议！</p>
+<ul>
+<li><p>安装中文输入法，如：<code>搜狗</code>。</p>
+</li>
+<li><p>安装浏览器，如：<code>chrome</code>。</p>
+</li>
+<li><p>彻底卸载办公软件Libreoffice，改用WPS等。</p>
+</li>
+</ul>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-calc	<span class="comment">//卸载libreoffice表格</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-draw	<span class="comment">//卸载libreoffice绘图</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-impress <span class="comment">//卸载libreoffice幻灯片</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice-writer  <span class="comment">//卸载libreoffice文档</span></span><br><span class="line">sudo apt <span class="built_in">remove</span> libreoffice*		<span class="comment">//清理所有libreoffice相关</span></span><br><span class="line">sudo apt purge libreoffice*			<span class="comment">//清理libreoffice配置文件</span></span><br><span class="line">sudo apt autoremove					<span class="comment">//清理libreoffice配置文件</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装思源宋体等好看的字体</li>
+<li>UI透明化，配置终端(这个很重要)等。</li>
+<li>安装Steam，开始白给。</li>
+<li>安装一个好看的主题。</li>
+<li>安装网易云音乐等。</li>
+</ul>
+
+            </div>
+        </div>
+  
+  
+  
+  
+
+  
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
 </html>
 

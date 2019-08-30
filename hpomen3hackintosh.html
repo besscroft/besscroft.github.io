@@ -1823,6 +1823,238 @@ show_date_time();
 
 
   
+  
+  
+  
+  
+    <div id="links">
+        <style>
+            .links-content{
+                margin-top:1rem;
+            }
+            
+            .link-navigation::after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            
+            .card {
+                width: 300px;
+                font-size: 1rem;
+                padding: 10px 20px;
+                border-radius: 4px;
+                transition-duration: 0.15s;
+                margin-bottom: 1rem;
+                display:flex;
+            }
+            .card:nth-child(odd) {
+                float: left;
+            }
+            .card:nth-child(even) {
+                float: right;
+            }
+            .card:hover {
+                transform: scale(1.1);
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+            }
+            .card a {
+                border:none; 
+            }
+            .card .ava {
+                width: 3rem!important;
+                height: 3rem!important;
+                margin:0!important;
+                margin-right: 1em!important;
+                border-radius:4px;
+                
+            }
+            .card .card-header {
+                font-style: italic;
+                overflow: hidden;
+                width: 236px;
+            }
+            .card .card-header a {
+                font-style: normal;
+                color: #2bbc8a;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .card .card-header a:hover {
+                color: #d480aa;
+                text-decoration: none;
+            }
+            .card .card-header .info {
+                font-style:normal;
+                color:#a3a3a3;
+                font-size:14px;
+                min-width: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        </style>
+        <div class="links-content">
+            <div class="link-navigation">
+
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://inspurer.github.io/images/avatar.jpg">
+                        <div class="card-header">
+                        <div><a href="https://inspurer.github.io/" target="_blank">@ 月小水长</a></div>
+                        <div class="info">饮冰室主人</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="http://www.heanny.cn/update/Photo/1812191426541545200814573620.jpg">
+                        <div class="card-header">
+                        <div><a href="http://www.heanny.cn/" target="_blank">@ Heanny Liu</a></div>
+                        <div class="info">我不是你的肖奈</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg">
+                        <div class="card-header">
+                        <div><a href="https://yremp.live/" target="_blank">@ Yremp</a></div>
+                        <div class="info">流年，谁给过的倾城</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://img.icons8.com/color/2x/ninja-head.png">
+                        <div class="card-header">
+                        <div><a href="http://werty.cn/" target="_blank">@ 猿宵</a></div>
+                        <div class="info">菩提树下改BUG的博客</div>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <img class="ava" src="https://i.kurumi.ink/img/logo.png">
+                        <div class="card-header">
+                        <div><a href="https://i.kurumi.ink/" target="_blank">@ 番茄酱の萌化小屋</a></div>
+                        <div class="info">略宅</div>
+                        </div>
+                    </div>
+                
+                
+
+            </div>
+            <p>闲暇之余，又一次给暗影精灵3，装上了黑苹果(MacOS 10.14.5)。实现完美电源管理，以及不插电开机(暗影精灵系列的朋友，装过黑苹果的应该知道意味着什么)。并将efi以及补丁发布出来，以便相同的笔记本可以安装。</p>
+<a id="more"></a>
+
+<p><img src="/hpomen3hackintosh/IMG_20190716_095724.jpg" alt></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><table>
+<thead>
+<tr>
+<th>产品名称暗影精灵3</th>
+<th>OMEN by HP Laptop 15-ce0xx</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BIOS</td>
+<td>F.19-04/18/2019</td>
+</tr>
+<tr>
+<td>处理器</td>
+<td>Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz</td>
+</tr>
+<tr>
+<td>独立显卡</td>
+<td>NVIDIA GeForce GTX 1050</td>
+</tr>
+<tr>
+<td>显卡</td>
+<td>Intel(R) HD Graphics 630</td>
+</tr>
+<tr>
+<td>声卡</td>
+<td>ALC295</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>HP SSD EX950 512G、HGST 1T</td>
+</tr>
+</tbody></table>
+<h3 id="已经OJBK的，和一些说明"><a href="#已经OJBK的，和一些说明" class="headerlink" title="已经OJBK的，和一些说明"></a>已经OJBK的，和一些说明</h3><ul>
+<li>声卡驱动正常，没发现破音</li>
+<li>配置页面显示正常</li>
+<li>所有功能正常使用，无报错，包括APP Store、<del>Facetime</del>、iTunes等</li>
+<li>触摸板、电池均正常</li>
+<li>休眠正常</li>
+<li><del>蓝牙没用过，不知道。。。</del></li>
+<li>机器上<del>所有接口</del>均正常，除了type-c接口没试过，我没有配件用的上这个接口</li>
+<li>有线网卡正常，无线网卡无解</li>
+<li>原生电源驱动正常，电池显示打了补丁</li>
+<li>完美实现不插电开机(暗影精灵最难解决的就是这个！)</li>
+<li>USB限制，不知道是解除了还是压根就没有，<a href="http://bbs.pcbeta.com/viewthread-1804129-1-1.html" target="_blank" rel="noopener">远景有篇帖子可以看看</a></li>
+<li>等等，不一一列举了！</li>
+</ul>
+<h3 id="无效功能"><a href="#无效功能" class="headerlink" title="无效功能"></a>无效功能</h3><ul>
+<li><del>小太阳(亮度调节)正常，打了补丁</del>,在10.13.6可以调节，在10.14.5需要单独重新弄。</li>
+<li>FaceTime在10.13.6及一下，都能激活使用，并和我的同学的iphone通话，但10.14.5不行，我还在查找原因！</li>
+<li>蓝牙需要单独激活(反正我几乎是没用过笔记本电脑的蓝牙，所以我想偷懒！)</li>
+<li>type-c应该是用不了。</li>
+<li>由于总所周知的原因，无线网卡无法驱动，只能靠USB网卡、有线网络或者换一个网卡来解决，如:Broadcom BCM94352z</li>
+<li>键盘暂时无法调节亮度，等啥时候有空再去管它吧！</li>
+<li>独显是没法驱动滴，这个大家都知道！</li>
+<li>由于独显没法驱动，所以HDMI无法使用！应该有其它解决方案的。</li>
+<li>其它问题暂时没发现，或者没注意到，毕竟每个人的使用程度不一样，我的要求就是能简单的娱乐办公就行了！</li>
+</ul>
+<h3 id="一些参考教程"><a href="#一些参考教程" class="headerlink" title="一些参考教程"></a>一些参考教程</h3><p><a href="http://www.zhuimeng.online/clover.html">黑苹果教程</a></p>
+<p><a href="https://mp.weixin.qq.com/s/oPAwyR9WafBcg0N-raPWYw" target="_blank" rel="noopener">HP暗影精灵3安装 macOS 10.14.3 Mojave 记录</a></p>
+<p><a href="https://mp.weixin.qq.com/s/st7feN-yHfDcvCEngvbIEw" target="_blank" rel="noopener">macOS Mojave黑苹果教程！</a></p>
+<p><a href="https://blog.daliansky.net/macOS-Mojave-10.14.5-18F132-official-version-with-Clover-4928-original-image.html" target="_blank" rel="noopener">【黑果小兵】macOS Mojave 10.14.5 18F132 正式版 with Clover 4928原版镜像</a></p>
+<p>远景论坛<a href="http://bbs.pcbeta.com/viewthread-1778499-1-1.html" target="_blank" rel="noopener">修改dsdt实现电量显示方法（整理修改已有帖子）</a></p>
+<p>tonymacx86<a href="https://www.tonymacx86.com/threads/solved-hp-omen-15-dc-battery-error.263814/#post-1841023" target="_blank" rel="noopener">HP OMEN 15-dc电池错误</a></p>
+<p><a href="https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/" target="_blank" rel="noopener">[指南]如何修补DSDT的工作电池状态</a></p>
+<h3 id="安装完之后可以干些什么？"><a href="#安装完之后可以干些什么？" class="headerlink" title="安装完之后可以干些什么？"></a>安装完之后可以干些什么？</h3><p>远景论坛<a href="http://bbs.pcbeta.com/viewthread-1798846-1-1.html" target="_blank" rel="noopener">黑苹果洗白成功分享</a></p>
+<p><a href="https://github.com/drduh/macOS-Security-and-Privacy-Guide" target="_blank" rel="noopener"><strong>macOS- 安全和隐私指南</strong></a></p>
+<p><a href="https://www.vultr.com/?ref=8102856-4F" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a></p>
+<h3 id="下载链接-镜像同步上传中"><a href="#下载链接-镜像同步上传中" class="headerlink" title="下载链接 镜像同步上传中"></a>下载链接 镜像同步上传中</h3><p>👍<strong>镜像来自于@黑果小兵的博客找的链接，我自己用的也是这个镜像！</strong></p>
+<p>迅雷离线下载：[[请点击下载](<a href="https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS" target="_blank" rel="noopener">https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/macOS</a> Mojave 10.14.5(18F132) Installer with Clover 4928.dmg)] 感谢<code>@难忘情怀</code>提供下载资源</p>
+<p>http下载链接:<a href="https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/" target="_blank" rel="noopener">请点击下载</a> 感谢<code>@难忘情怀</code>提供下载资源</p>
+<p>百毒云：链接: <a href="https://pan.baidu.com/s/1AKuzJXJe7haNYWo00YwJlQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1AKuzJXJe7haNYWo00YwJlQ</a> 提取码: ivmi</p>
+<p>MD5 (macOS Mojave 10.14.5(18F132) Installer with Clover 4928.dmg) = 371d9145484beaf0795d6b7d0d569fc3</p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><ul>
+<li>感谢 <a href="https://github.com/acidanthera" target="_blank" rel="noopener">Acidanthera</a> 提供 <a href="https://github.com/acidanthera/AppleALC" target="_blank" rel="noopener">AppleALC</a>，<a href="https://github.com/acidanthera/HibernationFixup" target="_blank" rel="noopener">HibernationFixup</a>，<a href="https://github.com/acidanthera/Lilu" target="_blank" rel="noopener">Lilu</a>，<a href="https://github.com/acidanthera/OpenCorePkg" target="_blank" rel="noopener">OpenCorePkg</a>，<a href="https://github.com/acidanthera/VirtualSMC" target="_blank" rel="noopener">VirtualSMC</a>，<a href="https://github.com/acidanthera/VoodooPS2" target="_blank" rel="noopener">VoodooPS2</a> 和 <a href="https://github.com/acidanthera/WhateverGreen" target="_blank" rel="noopener">WhateverGreen</a>。</li>
+<li>感谢 <a href="https://github.com/alexandred" target="_blank" rel="noopener">alexandred</a> 提供 <a href="https://github.com/alexandred/VoodooI2C" target="_blank" rel="noopener">VoodooI2C</a>。</li>
+<li>感谢 <a href="https://sourceforge.net/u/apianti" target="_blank" rel="noopener">apianti</a>，<a href="https://sourceforge.net/u/blackosx" target="_blank" rel="noopener">blackosx</a>，<a href="https://sourceforge.net/u/blusseau" target="_blank" rel="noopener">blusseau</a>，<a href="https://sourceforge.net/u/dmazar" target="_blank" rel="noopener">dmazar</a> 和 <a href="https://sourceforge.net/u/slice2009" target="_blank" rel="noopener">slice2009</a> 提供 <a href="https://sourceforge.net/projects/cloverefiboot" target="_blank" rel="noopener">Clover</a>。</li>
+<li>感谢 <a href="https://github.com/RehabMan" target="_blank" rel="noopener">RehabMan</a> 提供 <a href="https://github.com/RehabMan/EAPD-Codec-Commander" target="_blank" rel="noopener">EAPD-Codec-Commander</a>，<a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config" target="_blank" rel="noopener">OS-X-Clover-Laptop-Config</a>，<a href="https://github.com/RehabMan/OS-X-Null-Ethernet" target="_blank" rel="noopener">OS-X-Null-Ethernet</a>，<a href="https://github.com/RehabMan/OS-X-USB-Inject-All" target="_blank" rel="noopener">OS-X-USB-Inject-All</a> 和 <a href="https://github.com/RehabMan/hack-tools/tree/master/kexts/SATA-unsupported.kext" target="_blank" rel="noopener">SATA-unsupported</a>。</li>
+<li>感谢远景论坛的各位大佬提供的教程，以及<a href="https://github.com/daliansky" target="_blank" rel="noopener">黑果小兵</a>的镜像。</li>
+</ul>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><p><strong>Q:如何进入BIOS或者设置启动项？</strong></p>
+<p>A:开机后按下ESC键，然后根据指引选择</p>
+<p><strong>Q:是否需要登录apple账号呢？</strong></p>
+<p>A:建议使用小号来登录，否则可能被apple拉黑！</p>
+<p><strong>Q:为什么在你的电脑上可以，而我的电脑上不行呢？</strong></p>
+<p>A:我也不知道，您可以尝试问一下你的电脑:为什么你不行？</p>
+<p><strong>Q:为什么这么费电？</strong></p>
+<p>A:Google搜索:如何禁用独立显卡以节省电量</p>
+<p><strong>Q:为什么没有HiDPI？</strong></p>
+<p>A:我并不能解决所有的问题，如果您能向我提供帮助，那么太感激您了！</p>
+<h3 id="🔊扬声器无法使用的解决方案"><a href="#🔊扬声器无法使用的解决方案" class="headerlink" title="🔊扬声器无法使用的解决方案"></a>🔊扬声器无法使用的解决方案</h3><p>暗影精灵3的声卡是ALC295，找到我在repo中提供的<code>VoodooHDA-295.pkg</code>，并安装它。我很懒，只提供了这一种方案，如果您有更好的方案，欢迎分享！</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>是的，没错，为了水一篇文章而已，不要在意这些细节！</p>
+<p>👉GitHub:<strong><a href="https://github.com/bessyjl/HP-OMEN-3-Hackintosh" target="_blank" rel="noopener">HP-OMEN-3-Hackintosh</a></strong></p>
+
+            </div>
+        </div>
+  
+  
+  
+  
+
+  
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
 </html>
 
