@@ -4,16 +4,16 @@ const ap = new APlayer({
     autoplay: false,
     audio: [
       {
-        name: "青春纪念册",
-        artist: '可米小子',
-        url: 'http://www.ytmp3.cn/down/43623.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/57.jpg',
+        name: "黑暗森林",
+        artist: '雲翼星辰',
+        url: 'http://qiniu.bbsky.xyz/%E9%9B%B2%E7%BF%BC%E6%98%9F%E8%BE%B0%20-%20%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97%EF%BC%88%E5%8E%9F%E6%9B%B2%EF%BC%9ASchwarzer%20Regen%EF%BC%89.mp3',
+        cover: 'http://qiniu.bbsky.xyz/%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97.png',
       },
       {
-        name: '听妈妈的话',
-        artist: '周杰伦',
-        url: 'http://www.ytmp3.cn/down/51577.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/11.jpg',
+        name: 'Living in the Shadows',
+        artist: 'Matthew Perryman Jones',
+        url: 'http://qiniu.bbsky.xyz/Matthew%20Perryman%20Jones%20-%20Living%20in%20the%20Shadows.mp3',
+        cover: 'http://qiniu.bbsky.xyz/Living%20in%20the%20Shadows.png',
       }
     ]
 });
