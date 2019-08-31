@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #50ffff;
+  background: #0e09fb;
 }
 .feed-link,
 .chat {
@@ -3176,4 +3176,28 @@ article.post.post-type-normal {
     margin-left: 8px;
     margin-right: 8px;
   }
+}
+.aplayer .aplayer-lrc {
+  height: 35px;
+}
+.aplayer .aplayer-lrc p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px !important;
+}
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  color: #ff1493;
+}
+.aplayer.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+.aplayer.aplayer-fixed .aplayer-lrc {
+  display: none;
+}
+.aplayer .aplayer-lrc.aplayer-lrc-hide {
+  display: none !important;
+}
+.aplayer.aplayer-fixed .lrc-show {
+  display: block;
+  background: rgba(255,255,255,0.8);
 }
