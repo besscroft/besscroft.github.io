@@ -14,15 +14,5 @@ const dp = new DPlayer({
         pic: '',
         thumbnails: '',
         type: 'auto'
-    },
-    danmaku: {
-        id: '9E2E3368B56CDBC4',
-        api: 'https://api.prprpr.me/dplayer/',
-        token: 'tokendemo',
-        maximum: 1000,
-        addition: ['https://api.prprpr.me/dplayer/v3/bilibili?aid=4157142'],
-        user: 'DIYgod',
-        bottom: '10%',
-        unlimited: true
     }
 });
