@@ -11,8 +11,6 @@ const dp = new DPlayer({
     mutex: true,
     video: {
         url: 'http://qiniu.bbsky.xyz/video/I%20Vow%20To%20Thee%20My%20Country.mp4',
-        pic: '',
-        thumbnails: '',
         type: 'auto'
     }
 });
