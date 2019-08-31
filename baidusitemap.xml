@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.zhuimeng.online/wuyi.html</loc>
+    <lastmod>2019-08-31</lastmod>
+  </url>  <url>
+    <loc>http://www.zhuimeng.online/cso2.html</loc>
+    <lastmod>2019-08-31</lastmod>
+  </url>  <url>
     <loc>http://www.zhuimeng.online/hexo.html</loc>
     <lastmod>2019-08-23</lastmod>
   </url>  <url>
@@ -11,9 +17,6 @@
     <lastmod>2019-07-30</lastmod>
   </url>  <url>
     <loc>http://www.zhuimeng.online/zhandian.html</loc>
-    <lastmod>2019-07-23</lastmod>
-  </url>  <url>
-    <loc>http://www.zhuimeng.online/wuyi.html</loc>
     <lastmod>2019-07-23</lastmod>
   </url>  <url>
     <loc>http://www.zhuimeng.online/ubuntu.html</loc>
@@ -53,9 +56,6 @@
     <lastmod>2019-07-23</lastmod>
   </url>  <url>
     <loc>http://www.zhuimeng.online/duang.html</loc>
-    <lastmod>2019-07-23</lastmod>
-  </url>  <url>
-    <loc>http://www.zhuimeng.online/cso2.html</loc>
     <lastmod>2019-07-23</lastmod>
   </url>  <url>
     <loc>http://www.zhuimeng.online/clover.html</loc>
