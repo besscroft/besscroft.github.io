@@ -9,6 +9,24 @@ const ap = new APlayer({
         url: 'http://qiniu.bbsky.xyz/music/Shawn%20Mendes%20_%20Camila%20Cabello%20-%20Se%C3%B1orita.mp3',
         cover: 'http://qiniu.bbsky.xyz/img_music/Se%C3%B1orita.png',
       },
+	  {
+        name: 'I Shall Rise (Original Game Soundtrack)',
+        artist: 'Karen O',
+        url: 'http://qiniu.bbsky.xyz/music/I%20Shall%20Rise%20%28Original%20Game%20Soundtrack%29%20-%20Karen%20O.mp3',
+        cover: 'http://qiniu.bbsky.xyz/img_music/I%20Shall%20Rise.png',
+      },
+	  {
+        name: 'Boom Clap',
+        artist: 'Charli XCX',
+        url: 'http://qiniu.bbsky.xyz/music/Boom_Clap-Charli_XCX.flac',
+        cover: 'http://qiniu.bbsky.xyz/img_music/Boom_Clap.png',
+      },
+	  {
+        name: 'Obsession',
+        artist: 'Vice Jon Bellion',
+        url: 'http://qiniu.bbsky.xyz/music/Obsession-Vice_Jon_Bellion.mp3',
+        cover: 'http://qiniu.bbsky.xyz/img_music/Obsession.png',
+      },
       {
         name: "黑暗森林",
         artist: '雲翼星辰',
