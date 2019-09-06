@@ -150,18 +150,18 @@
 <meta name="keywords" content="Hexo,GitHub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客搭建">
-<meta property="og:url" content="http://www.zhuimeng.online/hexo.html">
+<meta property="og:url" content="http://www.52bess.com/hexo.html">
 <meta property="og:site_name" content="Bess&#39;s Blog">
 <meta property="og:description" content="写在前面为什么网上这么多教程，我还要在这里写下一篇呢？主要是总结大家的经验和自己的操作过程，一来是方便自己看，二来是给大家提供一些参考。Google一下，你可以找到几乎所有你想看到的，但是能否为你带来实质性的解决方案，可能也是需要花时间的。而且，跟别人做一样的操作，可能就刚好是你出了问题。。。没错，说的就是我自己。写这篇文章，仅此以纪念从WordPress转到Hexo。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://qiniu.bbsky.xyz/img_hexo/h001.png">
 <meta property="og:image" content="https://www.vultr.com/media/banners/banner_728x90.png">
-<meta property="og:image" content="http://www.zhuimeng.online/hexo/hexo001.png">
-<meta property="og:image" content="http://www.zhuimeng.online/hexo/hexo002.png">
-<meta property="og:image" content="http://www.zhuimeng.online/hexo/hexo003.png">
-<meta property="og:image" content="http://www.zhuimeng.online/hexo/hexo004.png">
-<meta property="og:image" content="http://www.zhuimeng.online/hexo/hexo005.png">
-<meta property="og:image" content="http://www.zhuimeng.online/hexo/hexo006.png">
+<meta property="og:image" content="http://www.52bess.com/hexo/hexo001.png">
+<meta property="og:image" content="http://www.52bess.com/hexo/hexo002.png">
+<meta property="og:image" content="http://www.52bess.com/hexo/hexo003.png">
+<meta property="og:image" content="http://www.52bess.com/hexo/hexo004.png">
+<meta property="og:image" content="http://www.52bess.com/hexo/hexo005.png">
+<meta property="og:image" content="http://www.52bess.com/hexo/hexo006.png">
 <meta property="og:updated_time" content="2019-09-02T10:03:39.646Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建">
@@ -176,7 +176,7 @@
 
   
   
-  <link rel="canonical" href="http://www.zhuimeng.online/hexo">
+  <link rel="canonical" href="http://www.52bess.com/hexo">
 
 
 
@@ -278,7 +278,7 @@
     </div>
     
       
-        <p class="site-subtitle">www.zhuimeng.online</p>
+        <p class="site-subtitle">www.52bess.com</p>
       
     
     
@@ -538,7 +538,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.zhuimeng.online/hexo.html">
+    <link itemprop="mainEntityOfPage" href="http://www.52bess.com/hexo.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Bess Croft">
@@ -824,7 +824,7 @@
 <p>如果你是才接触，那么我建议你熟悉之后，再将Hexo部署到其它托管平台！比如👉<a href="https://dashboard.heroku.com" target="_blank" rel="noopener">Heroku</a>（蛮好用的）、👉<a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>、👉<a href="https://rsync.samba.org/" target="_blank" rel="noopener">Rsync</a>、👉<a href="https://www.openshift.com/" target="_blank" rel="noopener">OpenShift</a>、等等。具体的可以去阅读👉<a href="https://hexo.io/zh-cn/docs/deployment" target="_blank" rel="noopener">官方文档</a></p>
 <h3 id="Hexo使用"><a href="#Hexo使用" class="headerlink" title="Hexo使用"></a>Hexo使用</h3><h4 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h4><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── .deploy       <span class="meta">#需要部署的文件</span></span><br><span class="line">├── node_modules  <span class="meta">#Hexo插件</span></span><br><span class="line">├── <span class="keyword">public</span>        <span class="meta">#生成的静态网页文件</span></span><br><span class="line">├── scaffolds     <span class="meta">#模板</span></span><br><span class="line">├── source        <span class="meta">#博客正文和其他源文件，404、favicon、CNAME 都应该放在这里</span></span><br><span class="line">|   ├── _drafts   <span class="meta">#草稿</span></span><br><span class="line">|   └── _posts    <span class="meta">#文章</span></span><br><span class="line">├── themes        <span class="meta">#主题</span></span><br><span class="line">├── _config.yml   <span class="meta">#全局配置文件</span></span><br><span class="line">└── <span class="keyword">package</span>.json</span><br></pre></td></tr></table></figure>
 
-<h4 id="全局配置-config-yml"><a href="#全局配置-config-yml" class="headerlink" title="全局配置_config.yml"></a>全局配置_config.yml</h4><p>请看我的这篇👉<a href="http://www.zhuimeng.online/zhandian.html#more">文章</a></p>
+<h4 id="全局配置-config-yml"><a href="#全局配置-config-yml" class="headerlink" title="全局配置_config.yml"></a>全局配置_config.yml</h4><p>请看我的这篇👉<a href="http://www.zhuimeng.online/zhandian.html#more" target="_blank" rel="noopener">文章</a></p>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>记得平时多做好备份，这是个好习惯。万一出现文件误删，丢失等，甚至GitHub你在某一天无法访问。</p>
 <p>我的博客的评论系统是<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a>我觉得还可以吧，其它的如：来比利、哦不是<a href="https://www.livere.com/" target="_blank" rel="noopener">来必力</a>、<a href="http://changyan.kuaizhan.com/" target="_blank" rel="noopener">畅言</a>等都是不错的。由于我只用了一个，优缺点就不说了，但是感觉Valine的UI更符合我的胃口。</p>
 <p>博客右下角的被大家称为萌萌哒，也就是二次元看板娘，是使用<a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md" target="_blank" rel="noopener">live-2d</a>实现的。</p>
@@ -960,7 +960,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://www.zhuimeng.online/hexo.html" title="Hexo博客搭建">http://www.zhuimeng.online/hexo.html</a>
+    <a href="http://www.52bess.com/hexo.html" title="Hexo博客搭建">http://www.52bess.com/hexo.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -1286,7 +1286,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.zhuimeng.online/about/" title="http://www.zhuimeng.online/about/">关于此博客</a>
+                    <a href="http://www.52bess.com/about/" title="http://www.52bess.com/about/">关于此博客</a>
                   </li>
                 
               </ul>
