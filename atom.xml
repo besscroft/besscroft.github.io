@@ -5,9 +5,9 @@
   <subtitle>www.52bess.com</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.52bess.com/"/>
+  <link href="https://www.52bess.com/"/>
   <updated>2019-09-01T08:21:55.842Z</updated>
-  <id>http://www.52bess.com/</id>
+  <id>https://www.52bess.com/</id>
   
   <author>
     <name>Bess Croft</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>在VirtualBox上安装Android-X86</title>
-    <link href="http://www.52bess.com/android-for-virtualbox.html"/>
-    <id>http://www.52bess.com/android-for-virtualbox.html</id>
+    <link href="https://www.52bess.com/android-for-virtualbox.html"/>
+    <id>https://www.52bess.com/android-for-virtualbox.html</id>
     <published>2019-08-17T02:50:49.000Z</published>
     <updated>2019-09-01T08:21:55.842Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="Android" scheme="http://www.52bess.com/categories/Android/"/>
+      <category term="Android" scheme="https://www.52bess.com/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://www.52bess.com/tags/Android/"/>
+      <category term="Android" scheme="https://www.52bess.com/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>彻底关闭Windows10系统更新！</title>
-    <link href="http://www.52bess.com/win10kill.html"/>
-    <id>http://www.52bess.com/win10kill.html</id>
+    <link href="https://www.52bess.com/win10kill.html"/>
+    <id>https://www.52bess.com/win10kill.html</id>
     <published>2019-07-30T07:00:44.000Z</published>
     <updated>2019-07-30T07:11:51.793Z</updated>
     
@@ -53,17 +53,17 @@
     
     </summary>
     
-      <category term="Windows10" scheme="http://www.52bess.com/categories/Windows10/"/>
+      <category term="Windows10" scheme="https://www.52bess.com/categories/Windows10/"/>
     
     
-      <category term="Windows10" scheme="http://www.52bess.com/tags/Windows10/"/>
+      <category term="Windows10" scheme="https://www.52bess.com/tags/Windows10/"/>
     
   </entry>
   
   <entry>
     <title>HP暗影精灵3黑苹果基本完工</title>
-    <link href="http://www.52bess.com/hpomen3hackintosh.html"/>
-    <id>http://www.52bess.com/hpomen3hackintosh.html</id>
+    <link href="https://www.52bess.com/hpomen3hackintosh.html"/>
+    <id>https://www.52bess.com/hpomen3hackintosh.html</id>
     <published>2019-07-17T09:42:47.000Z</published>
     <updated>2019-07-23T08:47:53.019Z</updated>
     
@@ -75,21 +75,21 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://www.52bess.com/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.52bess.com/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
     
-      <category term="黑苹果" scheme="http://www.52bess.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.52bess.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="暗影精灵3" scheme="http://www.52bess.com/tags/%E6%9A%97%E5%BD%B1%E7%B2%BE%E7%81%B53/"/>
+      <category term="暗影精灵3" scheme="https://www.52bess.com/tags/%E6%9A%97%E5%BD%B1%E7%B2%BE%E7%81%B53/"/>
     
-      <category term="HP" scheme="http://www.52bess.com/tags/HP/"/>
+      <category term="HP" scheme="https://www.52bess.com/tags/HP/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu安装记录</title>
-    <link href="http://www.52bess.com/ubuntu.html"/>
-    <id>http://www.52bess.com/ubuntu.html</id>
+    <link href="https://www.52bess.com/ubuntu.html"/>
+    <id>https://www.52bess.com/ubuntu.html</id>
     <published>2019-07-04T07:56:15.000Z</published>
     <updated>2019-07-23T08:49:31.527Z</updated>
     
@@ -104,17 +104,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://www.52bess.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://www.52bess.com/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://www.52bess.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://www.52bess.com/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>更换为Google Fonts思源宋体！</title>
-    <link href="http://www.52bess.com/fonts.html"/>
-    <id>http://www.52bess.com/fonts.html</id>
+    <link href="https://www.52bess.com/fonts.html"/>
+    <id>https://www.52bess.com/fonts.html</id>
     <published>2019-07-01T07:14:24.000Z</published>
     <updated>2019-07-23T08:46:19.468Z</updated>
     
@@ -129,19 +129,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://www.52bess.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/tags/Hexo/"/>
     
-      <category term="Google Fonts" scheme="http://www.52bess.com/tags/Google-Fonts/"/>
+      <category term="Google Fonts" scheme="https://www.52bess.com/tags/Google-Fonts/"/>
     
   </entry>
   
   <entry>
     <title>MarkDown写作的艺术</title>
-    <link href="http://www.52bess.com/markdown.html"/>
-    <id>http://www.52bess.com/markdown.html</id>
+    <link href="https://www.52bess.com/markdown.html"/>
+    <id>https://www.52bess.com/markdown.html</id>
     <published>2019-06-26T08:20:34.000Z</published>
     <updated>2019-06-26T08:47:57.793Z</updated>
     
@@ -156,17 +156,17 @@
     
     </summary>
     
-      <category term="markdown" scheme="http://www.52bess.com/categories/markdown/"/>
+      <category term="markdown" scheme="https://www.52bess.com/categories/markdown/"/>
     
     
-      <category term="markdown" scheme="http://www.52bess.com/tags/markdown/"/>
+      <category term="markdown" scheme="https://www.52bess.com/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>炫酷的主页</title>
-    <link href="http://www.52bess.com/diy.html"/>
-    <id>http://www.52bess.com/diy.html</id>
+    <link href="https://www.52bess.com/diy.html"/>
+    <id>https://www.52bess.com/diy.html</id>
     <published>2019-05-30T12:11:14.000Z</published>
     <updated>2019-07-01T06:53:04.555Z</updated>
     
@@ -179,17 +179,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://www.52bess.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>给你的博客Duang</title>
-    <link href="http://www.52bess.com/duang.html"/>
-    <id>http://www.52bess.com/duang.html</id>
+    <link href="https://www.52bess.com/duang.html"/>
+    <id>https://www.52bess.com/duang.html</id>
     <published>2019-05-12T04:09:53.000Z</published>
     <updated>2019-07-23T08:45:44.942Z</updated>
     
@@ -201,17 +201,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://www.52bess.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>愉快的五一假期</title>
-    <link href="http://www.52bess.com/wuyi.html"/>
-    <id>http://www.52bess.com/wuyi.html</id>
+    <link href="https://www.52bess.com/wuyi.html"/>
+    <id>https://www.52bess.com/wuyi.html</id>
     <published>2019-05-05T04:50:15.000Z</published>
     <updated>2019-08-31T08:03:06.293Z</updated>
     
@@ -223,17 +223,17 @@
     
     </summary>
     
-      <category term="生活" scheme="http://www.52bess.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://www.52bess.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="生活" scheme="http://www.52bess.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="https://www.52bess.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>神器Termux的使用记录</title>
-    <link href="http://www.52bess.com/termux.html"/>
-    <id>http://www.52bess.com/termux.html</id>
+    <link href="https://www.52bess.com/termux.html"/>
+    <id>https://www.52bess.com/termux.html</id>
     <published>2019-04-23T03:47:39.000Z</published>
     <updated>2019-07-23T08:49:19.430Z</updated>
     
@@ -245,17 +245,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://www.52bess.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://www.52bess.com/categories/Linux/"/>
     
     
-      <category term="Termux" scheme="http://www.52bess.com/tags/Termux/"/>
+      <category term="Termux" scheme="https://www.52bess.com/tags/Termux/"/>
     
   </entry>
   
   <entry>
     <title>Google sitemap不允许的网址解决办法</title>
-    <link href="http://www.52bess.com/googlesitemap.html"/>
-    <id>http://www.52bess.com/googlesitemap.html</id>
+    <link href="https://www.52bess.com/googlesitemap.html"/>
+    <id>https://www.52bess.com/googlesitemap.html</id>
     <published>2019-04-10T05:03:47.000Z</published>
     <updated>2019-07-23T08:47:20.036Z</updated>
     
@@ -267,17 +267,17 @@
     
     </summary>
     
-      <category term="Google Search Console" scheme="http://www.52bess.com/categories/Google-Search-Console/"/>
+      <category term="Google Search Console" scheme="https://www.52bess.com/categories/Google-Search-Console/"/>
     
     
-      <category term="Google Search Console" scheme="http://www.52bess.com/tags/Google-Search-Console/"/>
+      <category term="Google Search Console" scheme="https://www.52bess.com/tags/Google-Search-Console/"/>
     
   </entry>
   
   <entry>
     <title>Playing CSO2 on your computer！</title>
-    <link href="http://www.52bess.com/cso2.html"/>
-    <id>http://www.52bess.com/cso2.html</id>
+    <link href="https://www.52bess.com/cso2.html"/>
+    <id>https://www.52bess.com/cso2.html</id>
     <published>2019-04-03T13:55:50.000Z</published>
     <updated>2019-08-31T08:02:42.402Z</updated>
     
@@ -289,17 +289,17 @@
     
     </summary>
     
-      <category term="CSO2" scheme="http://www.52bess.com/categories/CSO2/"/>
+      <category term="CSO2" scheme="https://www.52bess.com/categories/CSO2/"/>
     
     
-      <category term="CSO2" scheme="http://www.52bess.com/tags/CSO2/"/>
+      <category term="CSO2" scheme="https://www.52bess.com/tags/CSO2/"/>
     
   </entry>
   
   <entry>
     <title>FTP的搭建和使用</title>
-    <link href="http://www.52bess.com/ftp.html"/>
-    <id>http://www.52bess.com/ftp.html</id>
+    <link href="https://www.52bess.com/ftp.html"/>
+    <id>https://www.52bess.com/ftp.html</id>
     <published>2019-03-30T14:12:47.000Z</published>
     <updated>2019-07-23T08:46:41.985Z</updated>
     
@@ -311,17 +311,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://www.52bess.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://www.52bess.com/categories/Linux/"/>
     
     
-      <category term="FTP" scheme="http://www.52bess.com/tags/FTP/"/>
+      <category term="FTP" scheme="https://www.52bess.com/tags/FTP/"/>
     
   </entry>
   
   <entry>
     <title>NexT主题个性定制与深度优化</title>
-    <link href="http://www.52bess.com/next.html"/>
-    <id>http://www.52bess.com/next.html</id>
+    <link href="https://www.52bess.com/next.html"/>
+    <id>https://www.52bess.com/next.html</id>
     <published>2019-03-29T07:45:51.000Z</published>
     <updated>2019-07-23T08:48:40.501Z</updated>
     
@@ -336,17 +336,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="个性" scheme="http://www.52bess.com/tags/%E4%B8%AA%E6%80%A7/"/>
+      <category term="个性" scheme="https://www.52bess.com/tags/%E4%B8%AA%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title>萌萌哒二次元看板娘</title>
-    <link href="http://www.52bess.com/live2d.html"/>
-    <id>http://www.52bess.com/live2d.html</id>
+    <link href="https://www.52bess.com/live2d.html"/>
+    <id>https://www.52bess.com/live2d.html</id>
     <published>2019-03-28T08:18:51.000Z</published>
     <updated>2019-07-23T08:48:10.552Z</updated>
     
@@ -358,17 +358,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="萌萌哒" scheme="http://www.52bess.com/tags/%E8%90%8C%E8%90%8C%E5%93%92/"/>
+      <category term="萌萌哒" scheme="https://www.52bess.com/tags/%E8%90%8C%E8%90%8C%E5%93%92/"/>
     
   </entry>
   
   <entry>
     <title>站点文件基本配置</title>
-    <link href="http://www.52bess.com/zhandian.html"/>
-    <id>http://www.52bess.com/zhandian.html</id>
+    <link href="https://www.52bess.com/zhandian.html"/>
+    <id>https://www.52bess.com/zhandian.html</id>
     <published>2019-03-25T11:56:53.000Z</published>
     <updated>2019-07-23T08:49:53.196Z</updated>
     
@@ -380,19 +380,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://www.52bess.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/tags/Hexo/"/>
     
-      <category term="站点文件配置" scheme="http://www.52bess.com/tags/%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/"/>
+      <category term="站点文件配置" scheme="https://www.52bess.com/tags/%E7%AB%99%E7%82%B9%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>Git本地文件到GitHub仓库</title>
-    <link href="http://www.52bess.com/gitgo.html"/>
-    <id>http://www.52bess.com/gitgo.html</id>
+    <link href="https://www.52bess.com/gitgo.html"/>
+    <id>https://www.52bess.com/gitgo.html</id>
     <published>2019-03-18T09:01:55.000Z</published>
     <updated>2019-07-23T08:47:06.552Z</updated>
     
@@ -404,21 +404,21 @@
     
     </summary>
     
-      <category term="Git" scheme="http://www.52bess.com/categories/Git/"/>
+      <category term="Git" scheme="https://www.52bess.com/categories/Git/"/>
     
-      <category term="GitHub" scheme="http://www.52bess.com/categories/Git/GitHub/"/>
+      <category term="GitHub" scheme="https://www.52bess.com/categories/Git/GitHub/"/>
     
     
-      <category term="Git" scheme="http://www.52bess.com/tags/Git/"/>
+      <category term="Git" scheme="https://www.52bess.com/tags/Git/"/>
     
-      <category term="GitHub" scheme="http://www.52bess.com/tags/GitHub/"/>
+      <category term="GitHub" scheme="https://www.52bess.com/tags/GitHub/"/>
     
   </entry>
   
   <entry>
     <title>Hexo多端同步</title>
-    <link href="http://www.52bess.com/remote.html"/>
-    <id>http://www.52bess.com/remote.html</id>
+    <link href="https://www.52bess.com/remote.html"/>
+    <id>https://www.52bess.com/remote.html</id>
     <published>2019-03-17T13:19:03.000Z</published>
     <updated>2019-07-23T08:48:53.034Z</updated>
     
@@ -430,17 +430,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="同步" scheme="http://www.52bess.com/tags/%E5%90%8C%E6%AD%A5/"/>
+      <category term="同步" scheme="https://www.52bess.com/tags/%E5%90%8C%E6%AD%A5/"/>
     
   </entry>
   
   <entry>
     <title>Hexo之魔法操作</title>
-    <link href="http://www.52bess.com/sao.html"/>
-    <id>http://www.52bess.com/sao.html</id>
+    <link href="https://www.52bess.com/sao.html"/>
+    <id>https://www.52bess.com/sao.html</id>
     <published>2019-03-17T04:23:16.000Z</published>
     <updated>2019-07-23T08:49:04.468Z</updated>
     
@@ -452,17 +452,17 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://www.52bess.com/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.52bess.com/categories/Hexo/"/>
     
     
-      <category term="魔法操作" scheme="http://www.52bess.com/tags/%E9%AD%94%E6%B3%95%E6%93%8D%E4%BD%9C/"/>
+      <category term="魔法操作" scheme="https://www.52bess.com/tags/%E9%AD%94%E6%B3%95%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>黑苹果教程</title>
-    <link href="http://www.52bess.com/clover.html"/>
-    <id>http://www.52bess.com/clover.html</id>
+    <link href="https://www.52bess.com/clover.html"/>
+    <id>https://www.52bess.com/clover.html</id>
     <published>2019-03-12T14:01:24.000Z</published>
     <updated>2019-08-31T08:44:23.827Z</updated>
     
@@ -475,12 +475,12 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://www.52bess.com/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.52bess.com/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
     
-      <category term="黑苹果" scheme="http://www.52bess.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.52bess.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="暗影精灵" scheme="http://www.52bess.com/tags/%E6%9A%97%E5%BD%B1%E7%B2%BE%E7%81%B5/"/>
+      <category term="暗影精灵" scheme="https://www.52bess.com/tags/%E6%9A%97%E5%BD%B1%E7%B2%BE%E7%81%B5/"/>
     
   </entry>
   
