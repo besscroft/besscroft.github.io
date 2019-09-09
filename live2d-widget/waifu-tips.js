@@ -223,15 +223,15 @@ function loadWidget(waifuPath, apiPath) {
 
 function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 	if (screen.width <= 768) return;
-	$("body").append(`<div id="waifu-toggle" style="margin-left: -100px;">
+	$("body").append(`<div id="waifu-toggle" style="margin-right: -100px;">
 			<span>看板娘</span>
 		</div>`);
 	$("#waifu-toggle").hover(() => {
-		$("#waifu-toggle").animate({ "margin-left": -30 }, 500);
+		$("#waifu-toggle").animate({ "margin-right": -30 }, 500);
 	}, () => {
-		$("#waifu-toggle").animate({ "margin-left": -50 }, 500);
+		$("#waifu-toggle").animate({ "margin-right": -50 }, 500);
 	}).click(() => {
-		$("#waifu-toggle").animate({ "margin-left": -100 }, 1000, () => {
+		$("#waifu-toggle").animate({ "margin-right": -100 }, 1000, () => {
 			$("#waifu-toggle").hide();
 		});
 		if ($("#waifu-toggle").attr("first-time")) {
@@ -243,7 +243,7 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 		}
 	});
 	if (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000) {
-		$("#waifu-toggle").attr("first-time", true).css({ "margin-left": -50 });
+		$("#waifu-toggle").attr("first-time", true).css({ "margin-right": -50 });
 	} else {
 		loadWidget(waifuPath, apiPath);
 	}
