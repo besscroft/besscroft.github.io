@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.52bess.com/live2d.html</loc>
+    <lastmod>2019-09-09</lastmod>
+  </url>  <url>
     <loc>https://www.52bess.com/hexo.html</loc>
     <lastmod>2019-09-02</lastmod>
   </url>  <url>
@@ -38,9 +41,6 @@
     <lastmod>2019-07-23</lastmod>
   </url>  <url>
     <loc>https://www.52bess.com/next.html</loc>
-    <lastmod>2019-07-23</lastmod>
-  </url>  <url>
-    <loc>https://www.52bess.com/live2d.html</loc>
     <lastmod>2019-07-23</lastmod>
   </url>  <url>
     <loc>https://www.52bess.com/hpomen3hackintosh.html</loc>
