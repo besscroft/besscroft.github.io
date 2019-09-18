@@ -12,7 +12,7 @@ const ap = new APlayer({
 	  {
         name: 'I Shall Rise (Original Game Soundtrack)',
         artist: 'Karen O',
-        url: 'http://pxyel3bmy.bkt.clouddn.com/music/I%20Shall%20Rise%20%28Original%20Game%20Soundtrack%29%20-%20Karen%20O.mp3',
+        url: 'https://cdn.jsdelivr.net/gh/bessyjl/cdn@1.3/music/I Shall Rise (Original Game Soundtrack) - Karen O.mp3',
         cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/I%20Shall%20Rise.png',
       },
 	  {
