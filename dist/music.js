@@ -38,12 +38,6 @@ const ap = new APlayer({
         artist: 'Matthew Perryman Jones',
         url: 'https://cdn.jsdelivr.net/gh/bessyjl/cdn@1.3/music/Matthew Perryman Jones - Living in the Shadows.mp3',
         cover: 'https://cdn.jsdelivr.net/gh/bessyjl/cdn@1.3/img/img_music/Living in the Shadows.png',
-      },
-	  {
-        name: '来自天堂的魔鬼',
-        artist: 'G.E.M. 邓紫棋',
-        url: 'https://cdn.jsdelivr.net/gh/bessyjl/cdn@1.3/music/G.E.M. 邓紫棋 - 来自天堂的魔鬼.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/bessyjl/cdn@1.3/img/img_music/来自天堂的魔鬼.png',
       }
     ]
 });
