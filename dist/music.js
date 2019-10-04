@@ -60,7 +60,7 @@ const ap = new APlayer({
         cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/vacation.png',
       },
 	  {
-        name: "Vacation",
+        name: "Everything I Need",
         artist: 'Skylar Grey',
         url: 'http://music.163.com/song/media/outer/url?id=1331322046.mp3',
         cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/Everything%20I%20Need.png',
