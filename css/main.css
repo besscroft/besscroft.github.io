@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #18fff1;
+  background: #34e0b4;
 }
 .feed-link,
 .chat {
@@ -3170,29 +3170,11 @@ article.post.post-type-normal {
     margin-left: 8px;
     margin-right: 8px;
   }
-  .card {
-    width: 90%;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition-duration: 0.15s;
-    margin-bottom: 1rem;
-    display: flex;
-  }
 }
 @media (max-width: 767px) {
   .posts-expand .post {
     margin-left: 8px;
     margin-right: 8px;
-  }
-  .card {
-    width: 90%;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition-duration: 0.15s;
-    margin-bottom: 1rem;
-    display: flex;
   }
 }
 .aplayer .aplayer-lrc {
