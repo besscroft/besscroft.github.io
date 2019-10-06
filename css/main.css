@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3b41ed;
+  background: #4bff8a;
 }
 .feed-link,
 .chat {
@@ -3022,7 +3022,7 @@ span.links-of-author-item {
 .footer-end1 {
   float: left;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 10px;
   padding-left: 10px;
 }
