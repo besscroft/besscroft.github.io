@@ -594,8 +594,20 @@
                 clear: both;
             }
             
+			@media (max-width: 767px) {
+				.card {
+					width: 90%;
+					font-size: 1rem;
+					padding: 10px 20px;
+					border-radius: 4px;
+					transition-duration: 0.15s;
+					margin-bottom: 1rem;
+					display:flex;
+				}
+			}
+			
             .card {
-                width: 300px;
+                width: 36%;
                 font-size: 1rem;
                 padding: 10px 20px;
                 border-radius: 4px;
@@ -631,7 +643,7 @@
             }
             .card .card-header a {
                 font-style: normal;
-                color: #2bbc8a;
+                color: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
                 font-weight: bold;
                 text-decoration: none;
             }
