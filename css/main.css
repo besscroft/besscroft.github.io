@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #327349;
+  background: #3767ab;
 }
 .feed-link,
 .chat {
@@ -3008,7 +3008,7 @@ span.links-of-author-item {
   line-height: 1.5;
   width: 100%;
   bottom: 0;
-  background-color: #4285f4 !important;
+  background-color: #ffccd6 !important;
   color: #fff;
   border-top-width: 3px;
   border-top-style: solid;
