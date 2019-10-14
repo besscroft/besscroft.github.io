@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.52bess.com/about/index.html</loc>
+    
+    <lastmod>2019-10-14T09:29:33.800Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.52bess.com/next.html</loc>
     
     <lastmod>2019-10-14T09:00:42.402Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://www.52bess.com/sao.html</loc>
     
     <lastmod>2019-09-17T15:23:48.346Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.52bess.com/about/index.html</loc>
-    
-    <lastmod>2019-09-17T03:19:31.434Z</lastmod>
     
   </url>
   
