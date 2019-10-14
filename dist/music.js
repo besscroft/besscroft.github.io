@@ -30,40 +30,46 @@ const ap = new APlayer({
 	  {
         name: 'Señorita',
         artist: 'Shawn Mendes _ Camila Cabello',
-        url: 'http://music.163.com/song/media/outer/url?id=1373168742.mp3',
-        cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/Se%C3%B1orita.png',
+        url: 'https://onedrive.52bess.com/blog/music/Se%C3%B1orita.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/Se%C3%B1orita.png',
       },
 	  {
         name: "黑暗森林",
         artist: '雲翼星辰',
-        url: 'http://music.163.com/song/media/outer/url?id=416892104.mp3',
-        cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97.png',
+        url: 'https://onedrive.52bess.com/blog/music/%E9%9B%B2%E7%BF%BC%E6%98%9F%E8%BE%B0%20-%20%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97%EF%BC%88%E5%8E%9F%E6%9B%B2%EF%BC%9ASchwarzer%20Regen%EF%BC%89.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97.png',
       },{
         name: "来自天堂的魔鬼",
         artist: 'G.E.M.邓紫棋',
-        url: 'http://music.163.com/song/media/outer/url?id=36270426.mp3',
-        cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/%E6%9D%A5%E8%87%AA%E5%A4%A9%E5%A0%82%E7%9A%84%E9%AD%94%E9%AC%BC.png',
+        url: 'https://onedrive.52bess.com/blog/music/G.E.M.%20%E9%82%93%E7%B4%AB%E6%A3%8B%20-%20%E6%9D%A5%E8%87%AA%E5%A4%A9%E5%A0%82%E7%9A%84%E9%AD%94%E9%AC%BC.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/%E6%9D%A5%E8%87%AA%E5%A4%A9%E5%A0%82%E7%9A%84%E9%AD%94%E9%AC%BC.png',
       },{
         name: "Say You Love Me",
         artist: 'Seeb,Skylar Grey',
-        url: 'http://music.163.com/song/media/outer/url?id=554169472.mp3',
-        cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/Say%20You%20Love%20Me.png',
+        url: 'https://onedrive.52bess.com/blog/music/Say%20You%20Love%20Me.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/Say%20You%20Love%20Me.png',
       },{
         name: "One Day",
         artist: 'MatisYahu/Akon',
-        url: 'http://music.163.com/song/media/outer/url?id=21157332.mp3',
-        cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/oneday.png',
+        url: 'https://onedrive.52bess.com/blog/music/One%20Day.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/oneday.png',
       },{
         name: "Vacation",
         artist: 'The Go-Gos',
-        url: 'http://music.163.com/song/media/outer/url?id=3583950.mp3',
-        cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/vacation.png',
+        url: 'https://onedrive.52bess.com/blog/music/Vacation.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/vacation.png',
       },
 	  {
         name: "Everything I Need",
         artist: 'Skylar Grey',
-        url: 'http://music.163.com/song/media/outer/url?id=1331322046.mp3',
-        cover: 'http://pxyel3bmy.bkt.clouddn.com/img_music/Everything%20I%20Need.png',
+        url: 'https://onedrive.52bess.com/blog/music/Everything%20I%20Need.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/Everything%20I%20Need.png',
+      },
+	  {
+        name: "Fractures",
+        artist: 'ILLENIUM/Nevve',
+        url: 'https://onedrive.52bess.com/blog/music/Fractures.mp3',
+        cover: 'https://onedrive.52bess.com/blog/img_music/Fractures.png',
       }
     ]
 });
