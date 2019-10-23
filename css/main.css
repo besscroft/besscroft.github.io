@@ -2007,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ee5d9d;
+  background: #ff5096;
 }
 .feed-link,
 .chat {
@@ -2747,7 +2747,7 @@ embed {
   display: inline-block;
 }
 body {
-  background: url("https://onedrive.52bess.com/blog/img_hexo/backgroud01.png");
+  background: url("https://cdn.jsdelivr.net/gh/bessyjl/cdn@1.5/img/backgroud/backgroud01.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
